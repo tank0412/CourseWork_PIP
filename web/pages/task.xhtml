@@ -1,0 +1,106 @@
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich">
+    <ui:define name="head">
+        <title>Tasks</title>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <f:metadata>
+            <f:viewParam name="id" value="#{taskBean.taskId}" />
+        </f:metadata>
+        <div class="d-flex container-fluid align-items-center flex-wrap align-self-center w-100">
+        <div class="leftBlock align-self-start m-2">
+            <h:outputText value="Id: " />
+            <h:outputText value="#{taskBean.task.id}" style="font-weight: bold"/><br/>
+
+            <h:outputText value="Name: " />
+            <h:outputText value="#{taskBean.task.name}" style="font-weight: bold"/><br/>
+
+            <h:outputText value="Customer: " />
+            <h:outputText value="#{taskBean.task.customer.name}" style="font-weight: bold"/><br/>
+
+            <h:outputText value="Executor: " />
+            <h:outputText value="#{taskBean.task.executor.name}" style="font-weight: bold"/><br/>
+            <hr/>
+            <h:outputText value="Lead Time: " />
+            <h:outputText value="#{taskBean.task.leadTime}" style="font-weight: bold"/><br/>
+
+            <h:outputText value="Reward: " />
+            <h:outputText value="#{taskBean.task.reward}" style="font-weight: bold"/><br/>
+
+            <h:outputText value="Created: " />
+            <h:outputText value="#{taskBean.task.placementDate.toLocaleString()}" style="font-weight: bold"/><br/>
+            <hr/>
+            <h:outputText value="Status: " />
+            <h:outputText value="#{taskBean.task.open ? 'Open' : 'Closed'}" style="font-weight: bold"/><br/>
+            <hr/>
+            <h:form rendered="#{taskBean.owner}">
+                <h:panelGrid columns="1">
+                    <p:outputLabel value="Choose executor"/>
+                    <p:inputText value="#{taskBean.executorId}" placeholder="executor id"/>
+                    <p:commandButton value="Choose" actionListener="#{taskBean.chooseExecutor}"/>
+                </h:panelGrid>
+                <hr/>
+            </h:form>
+            <h:form rendered="#{taskBean.owner}">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseCommands" aria-expanded="false" aria-controls="collapseCommands">
+                commands
+            </button>
+            <div class="collapse" id="collapseCommands">
+                <hr/>
+                <h:form>
+                    <h:panelGrid columns="1">
+                        <p:commandButton value="Close/Open" actionListener="#{taskBean.changeStatus}"/>
+                    </h:panelGrid>
+                    <hr/>
+                </h:form>
+
+            </div>
+            </h:form>
+            <h:form id="form" rendered="#{taskBean.owner}">
+                <br/>
+                <h:outputText value="Send request:" /><br/>
+                <hr/>
+                <p:repeat value="#{taskBean.reqlist}" var="req">
+                    <h:panelGrid columns="2" style="width:100%">
+                        <p:outputPanel>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputText value="User Id:" />
+                                <h:outputText value="#{req.userid}" style="font-weight: bold"/>
+
+                                <h:outputText value="Message:" />
+                                <h:outputText value="#{req.msg}" style="font-weight: bold"/>
+                            </h:panelGrid>
+                        </p:outputPanel>
+                    </h:panelGrid>
+                    <hr />
+                </p:repeat>
+            </h:form>
+
+        </div>
+        <div class="centerBlock align-self-start w-75 m-2">
+            <h:outputText value="Description:" /><br/>
+            <h:outputText value="#{taskBean.task.description}" style="font-weight: bold"/><br/>
+            <hr/>
+            <h:form >
+                <h:panelGrid columns="1">
+                    <p:outputLabel value="Send request"/>
+                    <p:inputText value="#{taskBean.reqmsg}" placeholder="message"/>
+                    <p:commandButton value="Send" actionListener="#{taskBean.sendRequest}"/>
+                </h:panelGrid>
+            </h:form>
+
+        </div>
+
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

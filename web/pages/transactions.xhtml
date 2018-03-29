@@ -1,0 +1,90 @@
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="head">
+        <title>Transactions</title>
+        <script type="text/javascript">var $j = jQuery.noConflict(true);</script>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <div class="d-flex container-fluid align-items-center flex-wrap align-self-center">
+        <div class="leftBlock m-2 align-self-start">
+            <h:form>
+                <h:outputText value="Buy coins:" /><br/>
+                <h:outputText value="Count:" /><br/>
+                <p:inputNumber value="#{transactionBean.countB}" step="1" minValue="1" maxValue="999999"/>
+                <br/>
+                <p:commandButton value="Buy" actionListener="#{transactionBean.buyCoins}"/>
+            </h:form>
+            <hr/>
+            <h:form>
+                <h:outputText value="Receive coins:" /><br/>
+                <h:outputText value="Count:" /><br/>
+                <p:inputNumber value="#{transactionBean.countR}" step="1" minValue="1" maxValue="${authChecking.user.coins}"/>
+                <br/>
+                <h:outputText value="Commission: 50 coins" />
+                <br/>
+                <p:commandButton value="Get" actionListener="#{transactionBean.receiveCoins}"/>
+            </h:form>
+
+        </div>
+
+        <div class="centerBlock m-2 w-50 align-self-start">
+        <h:form>
+            <h:outputText value="Send Coins to user:" /><br/>
+            <h:outputText value="Reciver user Id:" /><br/>
+            <p:inputText value="#{transactionBean.reciverId}"/><br/>
+            <h:outputText value="Count:" /><br/>
+            <p:inputNumber value="#{transactionBean.count}" minValue="1" maxValue="${authChecking.user.coins}"/>
+            <p:inputText type="number" value="#{transactionBean.count}"/>
+            <br/>
+            <h:outputText value="Commission: 50 coins if count less than 500" />
+            <br/>
+            <h:outputText value="Message:" />
+            <br/>
+            <p:inputText value="#{transactionBean.message}"/><br/>
+            <p:commandButton value="Send" actionListener="#{transactionBean.sendCoins}"/>
+        </h:form>
+
+        </div>
+        <div class="rightBlock m-2 align-self-start" style="width: 200px;">
+
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseCommands" aria-expanded="false" aria-controls="collapseCommands">
+                Transaction
+            </button>
+            <div class="collapse" id="collapseCommands">
+            <h:form id="form">
+                <p:commandButton value="Get transaction list" actionListener="#{transactionBean.getTrList}" update="form"/>
+                <p:repeat value="#{transactionBean.trs}" var="trans">
+                    <h:panelGrid columns="1" style="width:100%">
+                        <p:outputPanel>
+                            <h:panelGrid columns="2" cellpadding="0">
+                                <h:outputText value="From:" />
+                                <h:outputText value="#{trans.sender.name}" style="font-weight: bold"/>
+
+                                <h:outputText value="To:" />
+                                <h:outputText value="#{trans.receiver.name}" style="font-weight: bold"/>
+
+                                <h:outputText value="Count:" />
+                                <h:outputText value="#{trans.coins}" style="font-weight: bold"/>
+
+                                <h:outputText value="Message:" />
+                                <h:outputText value="#{trans.comment}" style="font-weight: bold"/>
+                            </h:panelGrid>
+                        </p:outputPanel>
+                    </h:panelGrid>
+                    <hr />
+                </p:repeat>
+            </h:form>
+            </div>
+        </div>
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

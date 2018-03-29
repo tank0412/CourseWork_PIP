@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+>
+
+<h:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../resources/css/main.css"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap.css"/>
+    <script src="../resources/js/jquery-3.2.1.min.js"/>
+    <script src="../resources/js/popper.js"/>
+    <script src="../resources/js/bootstrap.min.js"/>
+    <ui:insert name="head"/>
+</h:head>
+<h:body >
+
+    <div class="cont d-flex flex-column">
+
+        <div class="header d-flex flex-row align-items-start flex-wrap align-self-center">
+
+            <ui:insert name="header">header section</ui:insert>
+        </div>
+
+        <div class="main d-flex  align-self-center">
+            <ui:insert name="content">main section</ui:insert>
+        </div>
+
+        <div class="footer d-flex flex-column align-self-center">
+            <ui:insert name="footer">footer section</ui:insert>
+        </div>
+    </div>
+</h:body>
+</html>

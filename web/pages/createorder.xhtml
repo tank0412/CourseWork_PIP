@@ -1,0 +1,46 @@
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="head">
+        <title>Create new order</title>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <div class="leftBlock align-self-start">
+
+        </div>
+        <div class="centerBlock align-self-start w-50 p-2">
+           <h:form>
+               <h:panelGrid columns="2" cellpadding="5">
+               <h:outputText value="Name:" />
+               <p:inputText value="#{taskCreateBean.name}"/>
+
+               <h:outputText value="Discription:" />
+               <p:inputText value="#{taskCreateBean.discription}"/>
+
+               <h:outputText value="Lead Time:" />
+               <p:inputNumber value="#{taskCreateBean.leadTime}" minValue="1"/>
+
+               <h:outputText value="Reward:" />
+               <p:inputNumber value="#{taskCreateBean.reward}" minValue="1"/>
+
+               <h:outputText value="Comment:" />
+               <p:inputText value="#{taskCreateBean.comment}"/>
+               </h:panelGrid>
+
+               <p:commandButton value="Create new order" actionListener="#{taskCreateBean.createOrder}"/>
+
+           </h:form>
+        </div>
+        <div class="rightBlock align-self-start ml-auto">
+
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

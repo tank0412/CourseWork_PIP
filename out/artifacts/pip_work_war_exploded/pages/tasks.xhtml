@@ -1,0 +1,64 @@
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich">
+    <ui:define name="head">
+        <title>Tasks</title>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <div class="d-flex container-fluid align-items-start flex-wrap align-self-center w-100">
+        <div class="leftBlock m-2">
+            <h:form>
+                <p:menu>
+                    <p:submenu label="Tasks">
+                        <p:menuitem value="Available" actionListener="#{taskBean.changeParam(1)}" update="form"/>
+                        <p:menuitem value="In progress" actionListener="#{taskBean.changeParam(2)}" update="form" />
+                        <p:menuitem value="Completed" actionListener="#{taskBean.changeParam(3)}" update="form"/>
+                        <p:menuitem value="Own" actionListener="#{taskBean.changeParam(4)}" update="form"/>
+                    </p:submenu>
+                </p:menu>
+            </h:form>
+            <hr/>
+            <p:button outcome="createorder" value="Create new Taks">
+                <f:param name="i" value="1"/>
+            </p:button>
+        </div>
+        <div class="centerBlock  m-2">
+            <h:form id="form">
+                <p:repeat value="#{taskBean.orders}" var="task">
+                    <h:panelGrid columns="2" style="width:100%">
+
+                        <h:button value="open" outcome="task" >
+                            <f:param name="i" value="1"/>
+                            <f:param name="id" value="${task.id}"/>
+                        </h:button>
+
+
+                        <p:outputPanel>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputText value="Id:" />
+                                <h:outputText value="#{task.id}" style="font-weight: bold"/>
+
+                                <h:outputText value="Name:" />
+                                <h:outputText value="#{task.name}" style="font-weight: bold"/>
+
+                                <h:outputText value="Customer:" />
+                                <h:outputText value="#{task.customer.name}" style="font-weight: bold"/>
+                            </h:panelGrid>
+                        </p:outputPanel>
+                    </h:panelGrid>
+                    <hr />
+                </p:repeat>
+            </h:form>
+        </div>
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

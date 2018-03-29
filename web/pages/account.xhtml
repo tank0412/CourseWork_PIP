@@ -1,0 +1,85 @@
+
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="head">
+        <title>Account</title>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <div class="d-flex align-items-center flex-wrap align-self-center">
+        <div class="leftBlock m-2 align-self-start">
+            <h:panelGrid columns="2" cellpadding="5">
+
+                <h:outputText value="Id:" />
+                <h:outputText value="#{accountBean.user.id}" style="font-weight: bold"/>
+
+                <h:outputText value="Raiting:" />
+                <h:outputText value="#{accountBean.user.rating}" style="font-weight: bold"/>
+
+                <h:outputText value="Rank Lvl:" />
+                <h:outputText value="#{accountBean.user.rank.level}" style="font-weight: bold"/>
+
+                <h:outputText value="Rank:" />
+                <h:outputText value="#{accountBean.user.rank.name}" style="font-weight: bold"/>
+
+                <h:outputText value="Registration date:" />
+                <h:outputText value="#{accountBean.user.registrationDate.toLocaleString()}" style="font-weight: bold"/>
+            </h:panelGrid>
+        </div>
+        <div class="centerBlock  m-2">
+            <h:form>
+
+                <h:outputText value="Nickname: " />
+                <br/>
+                <p:inputText value="#{accountBean.user.nickname}" style="font-weight: bold"/>
+                <br/>
+                <h:outputText value="Name: "/>
+                <br/>
+                <p:inputText value="#{accountBean.user.name}" style="font-weight: bold"/>
+                <br/>
+                <h:outputText value="About: " />
+                <br/>
+                <p:inputTextarea value="#{accountBean.user.description}"/>
+                <br/>
+                <h:outputText value="Jabber ID:" />
+                <br/>
+                <div>
+                <p:inputText value="#{accountBean.user.jid}" style="font-weight: bold"/>
+                 <p:commandButton value="Test JID" actionListener="#{accountBean.testXMPPMessage}"/>
+                </div>
+
+
+                <p:commandButton value="Save" actionListener="#{accountBean.saveChanges}"/>
+            </h:form>
+            <hr/>
+
+        </div>
+            <div class="rightBlock m-2 align-self-start">
+                <h:form>
+                    <h:outputText value="Change password:" />
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <h:outputText value="Old password:" />
+                        <p:inputText type="password" value="#{accountBean.oldpass}" style="font-weight: bold"/>
+
+                        <h:outputText value="New password:" />
+                        <p:inputText type="password" value="#{accountBean.newpass}" style="font-weight: bold"/>
+
+                        <h:outputText value="Repeat new password:" />
+                        <p:inputText type="password" value="#{accountBean.newpass2}" style="font-weight: bold"/>
+
+                    </h:panelGrid>
+                    <p:commandButton value="Change password" actionListener="#{accountBean.changePass}"/>
+                </h:form>
+
+            </div>
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

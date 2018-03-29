@@ -1,0 +1,61 @@
+
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="head">
+        <title>Account</title>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <f:metadata>
+            <f:viewParam name="id" value="#{userBean.userId}" />
+        </f:metadata>
+        <div class="d-flex container-fluid align-items-center flex-wrap align-self-center w-100">
+        <div class="leftBlock align-self-start">
+            <h:panelGrid columns="2" cellpadding="5">
+
+
+
+                <h:outputText value="Raiting:" />
+                <h:outputText value="#{userBean.user.rating}" style="font-weight: bold"/>
+
+                <h:outputText value="Rank Lvl:" />
+                <h:outputText value="#{userBean.user.rank.level}" style="font-weight: bold"/>
+
+                <h:outputText value="Rank:" />
+                <h:outputText value="#{userBean.user.rank.name}" style="font-weight: bold"/>
+
+                <h:outputText value="Registration date:" />
+                <h:outputText value="#{userBean.user.registrationDate.toLocaleString()}" style="font-weight: bold"/>
+            </h:panelGrid>
+        </div>
+        <div class="centerBlock align-self-start w-50 p-2 align-items-center">
+            <h:form>
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="Id:" />
+                    <h:outputText value="#{userBean.userId}" style="font-weight: bold"/>
+                    <h:outputText value="Nickname:" />
+                    <h:outputText value="#{userBean.nickname}" style="font-weight: bold"/>
+
+                    <h:outputText value="Name:" />
+                    <h:outputText value="#{userBean.user.name}" style="font-weight: bold"/>
+
+                    <h:outputText value="About:" />
+                    <h:outputText value="#{userBean.user.description}" style="font-weight: bold"/>
+
+                    <h:outputText value="Jabber ID:" />
+                    <h:outputText value="#{userBean.user.jid}" style="font-weight: bold"/>
+
+                </h:panelGrid>
+            </h:form>
+        </div>
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>

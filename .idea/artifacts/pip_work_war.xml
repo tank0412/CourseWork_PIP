@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="pip_work:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/pip_work_war</output-path>
+    <root id="archive" name="pip_work_war.war">
+      <element id="artifact" artifact-name="pip_work:war exploded" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="ejb-3.2" />
+          <element id="library" level="project" name="cssparser-0.9.24" />
+          <element id="library" level="project" name="smack" />
+          <element id="library" level="project" name="smackx" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="library" level="application" name="jquery-3.1.1.slim" />
+          <element id="library" level="application" name="tether" />
+          <element id="library" level="application" name="bootstrap" />
+          <element id="library" level="application" name="popper" />
+          <element id="jpa-descriptors" facet="pip_work/jpa/JPA" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="pip_work/ejb/EJB" />
+      <element id="artifact" artifact-name="pip_work:ejb exploded" />
+    </root>
+  </artifact>
+</component>

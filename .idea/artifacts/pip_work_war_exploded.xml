@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pip_work:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/pip_work_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="pip_work/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pip_work" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Jersey-2.2" />
+          <element id="library" level="project" name="JPA 2.1-2.1" />
+          <element id="library" level="project" name="Hibernate 5.2.12-5.2.12" />
+          <element id="library" level="project" name="Mojarra-2.2.1" />
+          <element id="library" level="project" name="guava-19.0" />
+          <element id="library" level="application" name="com.google.code.gson:gson:2.8.2" />
+          <element id="library" level="application" name="richfaces-rich-4.5.17.Final" />
+          <element id="library" level="application" name="richfaces-page-fragments-4.5.17.Final" />
+          <element id="library" level="application" name="richfaces-core-4.5.17.Final" />
+          <element id="library" level="application" name="richfaces-a4j-4.5.17.Final" />
+          <element id="library" level="application" name="PrimeFaces-6.1" />
+          <element id="library" level="application" name="postgresql-9.4.1212.jre7" />
+          <element id="library" level="application" name="org.w3c.css:sac:1.3" />
+          <element id="library" level="project" name="org.projectlombok:lombok:1.14.8" />
+          <element id="library" level="project" name="cssparser-0.9.24" />
+          <element id="library" level="project" name="smack" />
+          <element id="library" level="project" name="smackx" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

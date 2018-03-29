@@ -1,0 +1,58 @@
+<ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="head">
+        <title>People</title>
+        <script type="text/javascript">var $j = jQuery.noConflict(true);</script>
+    </ui:define>
+    <ui:define name="header">
+        <ui:include src="../templates/header.xhtml"/>
+    </ui:define>
+    <ui:define name="content">
+        <div class="d-flex container-fluid align-items-center  align-self-center flex-wrap">
+        <div class="leftBlock align-self-start m-2">
+            <h:form>
+                <h:outputText value="Filters:"/><br/>
+                <h:outputText value="Nickname:"/><br/>
+                <p:inputText value="#{peopleBean.nickname}"/><br/>
+
+                <h:outputText value="Id:"/><br/>
+
+                <p:inputText type="number" value="#{peopleBean.id}"/><br/>
+
+                <h:outputText value="Rank:"/><br/>
+                <p:inputText type="number" value="#{peopleBean.rank}"/><br/>
+                <p:commandButton value="Search" actionListener="#{peopleBean.search}" update="form"/>
+            </h:form>
+        </div>
+        <div class="centerBlock align-self-start m-2">
+            <h:form id="form">
+                <p:repeat value="#{peopleBean.users}" var="user">
+                    <h:panelGrid columns="2" style="width:100%" columnClasses="logo,detail">
+                        <p:outputPanel>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputText value="Id:" />
+                                <h:outputText value="#{user.id}" style="font-weight: bold"/>
+
+                                <h:outputText value="Nickname:" />
+                                <h:outputText value="#{user.nickname}" style="font-weight: bold"/>
+
+                            </h:panelGrid>
+                            <h:button value="open" outcome="user" >
+                                <f:param name="i" value="3"/>
+                                <f:param name="id" value="${user.id}"/>
+                            </h:button>
+                        </p:outputPanel>
+                    </h:panelGrid>
+                    <hr />
+                </p:repeat>
+            </h:form>
+        </div>
+        </div>
+    </ui:define>
+    <ui:define name="footer">
+        <ui:include src="../templates/footer.xhtml"/>
+    </ui:define>
+</ui:composition>
