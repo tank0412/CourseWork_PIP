@@ -30,18 +30,15 @@
         <img class="userlogo mr-auto" src="../resources/img/logo.png" alt="logo" height="50px"/>
         <div class="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <p:link styleClass="nav-item nav-link" href="../pages/main.xhtml">Main</p:link>
-                <p:link styleClass="nav-item nav-link" href="../pages/tasks.xhtml">Tasks</p:link>
-                <p:link styleClass="nav-item nav-link" href="../pages/chats.xhtml">Chats</p:link>
-                <p:link styleClass="nav-item nav-link" href="../pages/people.xhtml">People</p:link>
-                <p:link styleClass="nav-item nav-link" href="../pages/transactions.xhtml">Transactions</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/main.xhtml">Главная</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/rent_status.xhtml">Статус аренды</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/fine.xhtml">Штрафы</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/rent_make.xhtml">Оформить аренду</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/people.xhtml">Профиль</p:link>
                 <h:form>
                     <p:commandLink styleClass="nav-item nav-link" action="#{authChecking.logout}" >Logout</p:commandLink>
                 </h:form>
             </div>
-        </div>
-        <div class="m-2">
-            <p:outputLabel value="${authChecking.user.coins}"/>
         </div>
         <div class="m-2">
             <p:link outcome="account">

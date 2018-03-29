@@ -1,0 +1,27 @@
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:rich="http://java.sun.com/jsf/html"
+                xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <nav class="navbar  navbar-toggleable-md navbar-expand-xl navbar-light bg-light d-flex flex-row w-100">
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"/>
+        </button>
+        <a href="../pages/mainpage.xhtml">
+        <img class="userlogo mr-auto" src="../resources/img/logo.png" alt="logo" height="50px"/>
+        </a>
+        <div class="collapse navbar-collapse mr-auto" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <p:link styleClass="nav-item nav-link" href="../pages/about.xhtml">О компании</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/cars.xhtml">Автопарк</p:link>
+               <!-- <p:link styleClass="nav-item nav-link" href="../pages/rent_status.xhtml">Статус аренды</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/fine.xhtml">Штрафы</p:link> -->
+                <p:link styleClass="nav-item nav-link" href="../pages/auth.xhtml">Вход/Регистрация</p:link>
+                <!--  <p:link styleClass="nav-item nav-link" href="../pages/rent_make.xhtml">Оформить аренду</p:link>-->
+             </div>
+         </div>
+     </nav>
+
+
+
+
+ </ui:composition>
