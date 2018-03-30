@@ -1,13 +1,9 @@
 package mbeans;
 
-import dao.RanksDao;
 import dao.UserDao;
-import ejb.userAuth;
-import models.Ranks;
 import models.Users;
 import org.primefaces.context.RequestContext;
 
-import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
@@ -64,9 +60,7 @@ public class AuthChecking {
         UserDao ud = new UserDao();
         user = ud.getByNickname(login);
         if(user == null){
-            RanksDao rd = new RanksDao();
-            Ranks rank = rd.getByLvl(0);
-            user = new Users(login, login, "", rank, 0L, 0, pass);
+            user = new Users(login, login, pass);
             ud.add(user);
             user = ud.getByNickname(login);
             isLogged = true;
@@ -142,7 +136,4 @@ public class AuthChecking {
         this.user = user;
     }
 
-    public boolean permission(){
-        return user.getRank().getLevel() >= 7;
-    }
 }

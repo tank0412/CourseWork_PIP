@@ -1,15 +1,14 @@
 package rest;
 
 import com.google.gson.Gson;
-import dao.*;
+import dao.UserDao;
 import ejb.userAuth;
-import models.*;
+import models.Users;
 
 import javax.ejb.EJB;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
@@ -71,9 +70,7 @@ public class RestApi {
         UserDao ud = new UserDao();
         user = ud.getByNickname(login);
         if (user == null) {
-            RanksDao rd = new RanksDao();
-            Ranks rank = rd.getByLvl(0);
-            user = new Users(login, login, "", rank, 0L, 0, pass);
+            user = new Users(login, login, pass);
             ud.add(user);
             user = ud.getByNickname(login);
             isLogged = true;
@@ -86,52 +83,6 @@ public class RestApi {
         return gson.toJson(false);
     }
 
-    @GET
-    @Path("getnews")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getNews(@QueryParam("login") String login, @QueryParam("pass") String pass) {
-        Gson gson = new Gson();
-        List<Messages> ms = new ArrayList<Messages>();
-        if (isreg(login, pass)) {
-            ChatsDao cd = new ChatsDao();
-            Chats chat = cd.getById(24L);
-            MessagesDao md = new MessagesDao();
-            ms = md.getAllFrom(chat);
-        }
-        Collections.reverse(ms);
-        return gson.toJson(convert(ms));
-    }
-
-    @GET
-    @Path("gettasks")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getTasks(@QueryParam("login") String login, @QueryParam("pass") String pass,@DefaultValue("0") @QueryParam("type") int type){
-        Gson gson = new Gson();
-        List<Orders> ms = new ArrayList<Orders>();
-        if (isreg(login, pass)) {
-            OrdersDao od = new OrdersDao();
-            UserDao ud = new UserDao();
-            Users user = ud.getByNickname(login);
-            switch (type){
-                case 0: ms = od.getAll();
-                    break;
-                case 1: ms = od.getOpenOrders();
-                    break;
-                case 2: ms = od.getOpenOrders(user);
-                    break;
-                case 3: ms = od.getClosedByExecutor(user);
-                    break;
-                case 4: ms = od.getByCustomer(user);
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        return gson.toJson(convertT(ms));
-    }
 
     @GET
     @Path("getpeople")
@@ -144,34 +95,13 @@ public class RestApi {
         Gson gson = new Gson();
         List<Users> ms = new ArrayList<Users>();
         if (isreg(login, pass)) {
-            OrdersDao od = new OrdersDao();
             UserDao ud = new UserDao();
             Users user = ud.getByNickname(login);
-            ms = ud.getByFilters(nickname, id, rank);
         }
         return gson.toJson(convertP(ms));
 
     }
 
-    private List<JsonMessage> convert(List<Messages> ms) {
-        List<JsonMessage> msj = new ArrayList<JsonMessage>();
-        for (Messages m :
-                ms) {
-            JsonMessage jm = new JsonMessage(m.getSender().getName(), m.getMessage(), m.getTime().toString());
-            msj.add(jm);
-        }
-        return msj;
-    }
-    private List<JsonTask> convertT(List<Orders> ms) {
-        List<JsonTask> msj = new ArrayList<JsonTask>();
-        for (Orders o :
-                ms) {
-            JsonTask jm = new JsonTask(o.getId(), o.getCustomer().getNickname(), o.getDescription(),
-                    o.getName(), o.getReward(), o.getLeadTime(), o.getComment());
-            msj.add(jm);
-        }
-        return msj;
-    }
 
     private List<JsonPeople> convertP(List<Users> ms) {
         List<JsonPeople> msj = new ArrayList<JsonPeople>();

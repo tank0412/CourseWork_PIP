@@ -53,6 +53,5 @@ public class PeopleBean implements Serializable {
 
     public void search(){
         UserDao ud = new UserDao();
-        users = ud.getByFilters(nickname, id, rank);
     }
 }

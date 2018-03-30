@@ -6,7 +6,6 @@ import models.Users;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
 @ManagedBean(name = "userBean")
@@ -39,10 +38,7 @@ public class UserBean implements Serializable {
             UserDao ud = new UserDao();
             user = ud.getById(this.userId);
         }
-        if(me.getRank().getLevel() >= user.getRank().getLevel())
             return user;
-        else
-            return null;
     }
 
     public void setUser(Users user) {

@@ -45,8 +45,8 @@
     </role>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-29.07:10:06.117</IntrospectionTimestamp>
-      <IntrospectionStateNumber>589</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-03-30.08:43:39.772</IntrospectionTimestamp>
+      <IntrospectionStateNumber>648</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -65,706 +65,81 @@
     <schema id="14" parent="2" name="information_schema">
       <ObjectId>12002</ObjectId>
     </schema>
-    <sequence id="15" parent="9" name="transactions_id_seq">
-      <ObjectId>16566</ObjectId>
-      <StateNumber>587</StateNumber>
+    <sequence id="15" parent="9" name="users_id_seq">
+      <ObjectId>16646</ObjectId>
+      <StateNumber>619</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="16" parent="9" name="assignment_id_seq">
-      <ObjectId>16462</ObjectId>
-      <StateNumber>582</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="17" parent="9" name="chats_id_seq">
-      <ObjectId>16484</ObjectId>
-      <StateNumber>583</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="18" parent="9" name="messages_id_seq">
-      <ObjectId>16501</ObjectId>
-      <StateNumber>584</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="19" parent="9" name="orders_id_seq">
-      <ObjectId>16524</ObjectId>
-      <StateNumber>585</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="20" parent="9" name="ranks_id_seq">
-      <ObjectId>16431</ObjectId>
-      <StateNumber>580</StateNumber>
-      <SequenceIdentity>1..2147483647</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
-    </sequence>
-    <sequence id="21" parent="9" name="requestexec_id_seq">
-      <ObjectId>16555</ObjectId>
-      <StateNumber>586</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <sequence id="22" parent="9" name="users_id_seq">
-      <ObjectId>16442</ObjectId>
-      <StateNumber>581</StateNumber>
-      <SequenceIdentity>1</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-      <DataType>bigint</DataType>
-    </sequence>
-    <table id="23" parent="9" name="assignment">
-      <ObjectId>16464</ObjectId>
-      <StateNumber>582</StateNumber>
+    <table id="16" parent="9" name="users">
+      <ObjectId>16648</ObjectId>
+      <StateNumber>632</StateNumber>
     </table>
-    <table id="24" parent="9" name="chats">
-      <ObjectId>16486</ObjectId>
-      <StateNumber>589</StateNumber>
-    </table>
-    <table id="25" parent="9" name="messages">
-      <ObjectId>16503</ObjectId>
-      <StateNumber>584</StateNumber>
-    </table>
-    <table id="26" parent="9" name="orders">
-      <ObjectId>16526</ObjectId>
-      <StateNumber>585</StateNumber>
-    </table>
-    <table id="27" parent="9" name="ranks">
-      <ObjectId>16433</ObjectId>
-      <StateNumber>582</StateNumber>
-    </table>
-    <table id="28" parent="9" name="requestexec">
-      <ObjectId>16557</ObjectId>
-      <StateNumber>586</StateNumber>
-    </table>
-    <table id="29" parent="9" name="transactions">
-      <ObjectId>16568</ObjectId>
-      <StateNumber>587</StateNumber>
-    </table>
-    <table id="30" parent="9" name="users">
-      <ObjectId>16444</ObjectId>
-      <StateNumber>589</StateNumber>
-    </table>
-    <table id="31" parent="9" name="userschats">
-      <ObjectId>16589</ObjectId>
-      <StateNumber>589</StateNumber>
-    </table>
-    <column id="32" parent="23" name="id">
+    <column id="17" parent="16" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>582</StateNumber>
-      <DefaultExpression>nextval(&apos;assignment_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>assignment_id_seq</SequenceName>
-    </column>
-    <column id="33" parent="23" name="userid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>582</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="34" parent="23" name="rankid">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>582</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="35" parent="23" name="datebegin">
-      <Position>4</Position>
-      <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>582</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
-    </column>
-    <column id="36" parent="23" name="reason">
-      <Position>5</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>582</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="37" parent="23" name="assignment_pkey">
-      <ObjectId>16472</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="38" parent="23" name="assignment_pkey">
-      <ObjectId>16473</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>assignment_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="39" parent="23" name="assignment_userid_fkey">
-      <ObjectId>16474</ObjectId>
-      <ColNames>userid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="40" parent="23" name="assignment_rankid_fkey">
-      <ObjectId>16479</ObjectId>
-      <ColNames>rankid</ColNames>
-      <RefTableId>16433</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>ranks</RefTableName>
-      <RefKeyName>ranks_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="41" parent="24" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>583</StateNumber>
-      <DefaultExpression>nextval(&apos;chats_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>chats_id_seq</SequenceName>
-    </column>
-    <column id="42" parent="24" name="name">
-      <Position>2</Position>
-      <DataType>varchar(512)|0</DataType>
-      <StateNumber>583</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="43" parent="24" name="type">
-      <Position>3</Position>
-      <DataType>varchar(64)|0</DataType>
-      <StateNumber>583</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="44" parent="24" name="createrid">
-      <Position>4</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>583</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="45" parent="24" name="datebegin">
-      <Position>5</Position>
-      <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>583</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
-    </column>
-    <index id="46" parent="24" name="chats_pkey">
-      <ObjectId>16494</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="47" parent="24" name="chats_pkey">
-      <ObjectId>16495</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>chats_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="48" parent="24" name="chats_createrid_fkey">
-      <ObjectId>16496</ObjectId>
-      <ColNames>createrid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <column id="49" parent="25" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>584</StateNumber>
-      <DefaultExpression>nextval(&apos;messages_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>messages_id_seq</SequenceName>
-    </column>
-    <column id="50" parent="25" name="senderid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>584</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="51" parent="25" name="chatid">
-      <Position>3</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>584</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="52" parent="25" name="time">
-      <Position>4</Position>
-      <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>584</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
-    </column>
-    <column id="53" parent="25" name="received">
-      <Position>5</Position>
-      <DataType>boolean|0</DataType>
-      <StateNumber>584</StateNumber>
-      <DefaultExpression>false</DefaultExpression>
-      <TypeId>16</TypeId>
-    </column>
-    <column id="54" parent="25" name="message">
-      <Position>6</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>584</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="55" parent="25" name="messages_pkey">
-      <ObjectId>16512</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="56" parent="25" name="messages_pkey">
-      <ObjectId>16513</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>messages_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="57" parent="25" name="messages_senderid_fkey">
-      <ObjectId>16514</ObjectId>
-      <ColNames>senderid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>set-null</OnDelete>
-      <OnUpdate>set-null</OnUpdate>
-    </foreign-key>
-    <foreign-key id="58" parent="25" name="messages_chatid_fkey">
-      <ObjectId>16519</ObjectId>
-      <ColNames>chatid</ColNames>
-      <RefTableId>16486</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>chats</RefTableName>
-      <RefKeyName>chats_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <column id="59" parent="26" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>585</StateNumber>
-      <DefaultExpression>nextval(&apos;orders_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>orders_id_seq</SequenceName>
-    </column>
-    <column id="60" parent="26" name="customerid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>585</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="61" parent="26" name="executorid">
-      <Position>3</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>585</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="62" parent="26" name="placementdate">
-      <Position>4</Position>
-      <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>585</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
-    </column>
-    <column id="63" parent="26" name="description">
-      <Position>5</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>585</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="64" parent="26" name="leadtime">
-      <Position>6</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>585</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="65" parent="26" name="reward">
-      <Position>7</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>585</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="66" parent="26" name="open">
-      <Position>8</Position>
-      <DataType>boolean|0</DataType>
-      <StateNumber>585</StateNumber>
-      <DefaultExpression>true</DefaultExpression>
-      <TypeId>16</TypeId>
-    </column>
-    <column id="67" parent="26" name="chatid">
-      <Position>9</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>585</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="68" parent="26" name="comment">
-      <Position>10</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>585</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="69" parent="26" name="name">
-      <Position>11</Position>
-      <DataType>varchar(128)|0</DataType>
-      <StateNumber>585</StateNumber>
-      <DefaultExpression>&apos;task&apos;::character varying</DefaultExpression>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="70" parent="26" name="orders_pkey">
-      <ObjectId>16538</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="71" parent="26" name="orders_pkey">
-      <ObjectId>16539</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>orders_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="72" parent="26" name="orders_customerid_fkey">
-      <ObjectId>16540</ObjectId>
-      <ColNames>customerid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <foreign-key id="73" parent="26" name="orders_executorid_fkey">
-      <ObjectId>16545</ObjectId>
-      <ColNames>executorid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <foreign-key id="74" parent="26" name="orders_chatid_fkey">
-      <ObjectId>16550</ObjectId>
-      <ColNames>chatid</ColNames>
-      <RefTableId>16486</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>chats</RefTableName>
-      <RefKeyName>chats_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <check id="75" parent="26" name="orders_leadtime_check">
-      <ObjectId>16533</ObjectId>
-      <ColNames>leadtime</ColNames>
-      <Predicate>leadtime &gt; 0</Predicate>
-    </check>
-    <check id="76" parent="26" name="orders_reward_check">
-      <ObjectId>16534</ObjectId>
-      <ColNames>reward</ColNames>
-      <Predicate>reward &gt; 0</Predicate>
-    </check>
-    <column id="77" parent="27" name="id">
-      <Position>1</Position>
-      <DataType>integer|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>580</StateNumber>
-      <DefaultExpression>nextval(&apos;ranks_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-      <SequenceName>ranks_id_seq</SequenceName>
-    </column>
-    <column id="78" parent="27" name="name">
-      <Position>2</Position>
-      <DataType>varchar(512)|0</DataType>
-      <StateNumber>580</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="79" parent="27" name="level">
-      <Position>3</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>580</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="80" parent="27" name="descripion">
-      <Position>4</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>580</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="81" parent="27" name="ranks_pkey">
-      <ObjectId>16440</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="82" parent="27" name="ranks_pkey">
-      <ObjectId>16441</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>ranks_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="83" parent="28" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>586</StateNumber>
-      <DefaultExpression>nextval(&apos;requestexec_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>requestexec_id_seq</SequenceName>
-    </column>
-    <column id="84" parent="28" name="orderid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>586</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="85" parent="28" name="userid">
-      <Position>3</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>586</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="86" parent="28" name="msg">
-      <Position>4</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>586</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="87" parent="28" name="requestexec_pkey">
-      <ObjectId>16564</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="88" parent="28" name="requestexec_pkey">
-      <ObjectId>16565</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>requestexec_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="89" parent="29" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>587</StateNumber>
-      <DefaultExpression>nextval(&apos;transactions_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
-      <SequenceName>transactions_id_seq</SequenceName>
-    </column>
-    <column id="90" parent="29" name="senderid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>587</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="91" parent="29" name="receiverid">
-      <Position>3</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>587</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="92" parent="29" name="coins">
-      <Position>4</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>587</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="93" parent="29" name="date">
-      <Position>5</Position>
-      <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>587</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
-    </column>
-    <column id="94" parent="29" name="comment">
-      <Position>6</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>587</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="95" parent="29" name="transactions_pkey">
-      <ObjectId>16577</ObjectId>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="96" parent="29" name="transactions_pkey">
-      <ObjectId>16578</ObjectId>
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>transactions_pkey</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="97" parent="29" name="transactions_senderid_fkey">
-      <ObjectId>16579</ObjectId>
-      <ColNames>senderid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="98" parent="29" name="transactions_receiverid_fkey">
-      <ObjectId>16584</ObjectId>
-      <ColNames>receiverid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <check id="99" parent="29" name="transactions_coins_check">
-      <ObjectId>16573</ObjectId>
-      <ColNames>coins</ColNames>
-      <Predicate>coins &gt; 0</Predicate>
-    </check>
-    <column id="100" parent="30" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>users_id_seq</SequenceName>
     </column>
-    <column id="101" parent="30" name="nickname">
+    <column id="18" parent="16" name="nickname">
       <Position>2</Position>
       <DataType>varchar(512)|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="102" parent="30" name="name">
+    <column id="19" parent="16" name="name">
       <Position>3</Position>
       <DataType>varchar(512)|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="103" parent="30" name="description">
+    <column id="20" parent="16" name="description">
       <Position>4</Position>
       <DataType>text|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="104" parent="30" name="rankid">
-      <Position>5</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>581</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="105" parent="30" name="registrationdate">
+    <column id="21" parent="16" name="registrationdate">
       <Position>6</Position>
       <DataType>timestamp with time zone|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="106" parent="30" name="coins">
-      <Position>7</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>581</StateNumber>
-      <DefaultExpression>0</DefaultExpression>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="107" parent="30" name="rating">
-      <Position>8</Position>
-      <DataType>integer|0</DataType>
-      <StateNumber>581</StateNumber>
-      <DefaultExpression>0</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="108" parent="30" name="password">
+    <column id="22" parent="16" name="password">
       <Position>9</Position>
       <DataType>varchar(30)|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="109" parent="30" name="hash">
+    <column id="23" parent="16" name="hash">
       <Position>10</Position>
       <DataType>bigint|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <DefaultExpression>0</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="110" parent="30" name="jid">
+    <column id="24" parent="16" name="jid">
       <Position>11</Position>
       <DataType>varchar(256)|0</DataType>
-      <StateNumber>581</StateNumber>
+      <StateNumber>619</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="111" parent="30" name="users_pkey">
-      <ObjectId>16455</ObjectId>
+    <index id="25" parent="16" name="users_pkey">
+      <ObjectId>16659</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="112" parent="30" name="users_pkey">
-      <ObjectId>16456</ObjectId>
+    <key id="26" parent="16" name="users_pkey">
+      <ObjectId>16660</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="113" parent="30" name="users_rankid_fkey">
-      <ObjectId>16457</ObjectId>
-      <ColNames>rankid</ColNames>
-      <RefTableId>16433</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>ranks</RefTableName>
-      <RefKeyName>ranks_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-      <OnDelete>set-null</OnDelete>
-      <OnUpdate>cascade</OnUpdate>
-    </foreign-key>
-    <column id="114" parent="31" name="userid">
-      <Position>1</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>589</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="115" parent="31" name="chatid">
-      <Position>2</Position>
-      <DataType>bigint|0</DataType>
-      <StateNumber>589</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <foreign-key id="116" parent="31" name="userschats_userid_fkey">
-      <ObjectId>16592</ObjectId>
-      <ColNames>userid</ColNames>
-      <RefTableId>16444</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>users</RefTableName>
-      <RefKeyName>users_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="117" parent="31" name="userschats_chatid_fkey">
-      <ObjectId>16597</ObjectId>
-      <ColNames>chatid</ColNames>
-      <RefTableId>16486</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>chats</RefTableName>
-      <RefKeyName>chats_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
   </database-model>
 </dataSource>
