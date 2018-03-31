@@ -18,6 +18,27 @@ public class AuthChecking {
     private String pass;
     private Users user;
 
+    public void checkIsAdmin() {
+        Users user;
+        UserDao ud = new UserDao();
+        user = ud.getByNickname(login);
+        if(user != null && pass.equals(user.getPassword())) {
+            userId = user.getId();
+            this.user = user;
+            FacesContext facesContext = FacesContext.getCurrentInstance();
+            String outcome = "main.xhtml";
+            if (ud.isAdmin(userId) != true) {
+                RequestContext.getCurrentInstance().execute("alert('You do not have rights to visit this page');");
+                outcome = "main.xhtml";
+
+                try {
+                    facesContext.getExternalContext().redirect(outcome);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
     public void checkIsLogged(){
         if(!isLogged)
         {
