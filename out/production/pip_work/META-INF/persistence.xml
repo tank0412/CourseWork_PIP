@@ -5,6 +5,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <class>models.Users</class>
+        <class>models.Rent</class>
         <properties>
             <!--
                                         <property name="hibernate.connection.url" value="jdbc:postgresql://pg:5432/studs"/>

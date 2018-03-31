@@ -16,19 +16,19 @@
                 <h:outputText value="Enter Rent:" />
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="Car ID :" />
-                    <p:inputText type="password" value="#{EnterRent.Car_ID}" style="font-weight: bold"/>
+                    <p:inputText value="#{EnterRent.car_ID}" style="font-weight: bold"/>
 
                     <h:outputText value="Client ID:" />
-                    <p:inputText type="password" value="#{EnterRent.Client_ID}" style="font-weight: bold"/>
+                    <p:inputText  value="#{EnterRent.client_ID}" style="font-weight: bold"/>
 
                     <h:outputText value="Date start rent:" />
-                    <p:inputText type="password" value="#{EnterRent.Date_start_rent}" style="font-weight: bold"/>
+                    <p:inputText value="#{EnterRent.date_start_rent}" style="font-weight: bold"/>
 
                     <h:outputText value="Date end rent:" />
-                    <p:inputText type="password" value="#{EnterRent.Date_end_rent}" style="font-weight: bold"/>
+                    <p:inputText value="#{EnterRent.date_end_rent}" style="font-weight: bold"/>
 
                     <h:outputText value="Price of rent:" />
-                    <p:inputText type="password" value="#{EnterRent.Price_of_rent}" style="font-weight: bold"/>
+                    <p:inputText value="#{EnterRent.price_of_rent}" style="font-weight: bold"/>
 
                 </h:panelGrid>
                 <p:commandButton value="Submit rent" actionListener="#{EnterRent.enter}"/>
