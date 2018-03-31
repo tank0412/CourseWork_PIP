@@ -25,6 +25,8 @@ public class EnterRent {
         //rent = rd.getByNickname(login);
         //if(rent == null){
             rent = new Rent(Car_ID, Client_ID, Date_start_rent,Date_end_rent, Price_of_rent );
+        //String result = "Submitted values: " + Car_ID + ", " + Client_ID + Date_start_rent + ", " + Date_end_rent + ", " + Price_of_rent + ", " ;
+       //RequestContext.getCurrentInstance().execute("alert(result);");
             rd.add(rent);
             //user = rd.getByNickname(login);
           //  isLogged = true;
