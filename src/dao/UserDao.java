@@ -153,11 +153,11 @@ public class UserDao extends ICrud<Users> {
         List<Users> result = (List<Users>)query.getResultList();
         //Query query = em.createQuery("from Users where id = 3L" );
             if (result.size() == 0) {
-                RequestContext.getCurrentInstance().execute("alert('Not admin');");
+               // RequestContext.getCurrentInstance().execute("alert('Not admin');");
                 return false;
             }
             else
-               RequestContext.getCurrentInstance().execute("alert('admin');");
+              // RequestContext.getCurrentInstance().execute("alert('admin');");
                 return true;
     }
 

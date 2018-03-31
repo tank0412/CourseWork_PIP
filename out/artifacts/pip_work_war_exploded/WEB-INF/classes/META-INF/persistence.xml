@@ -6,6 +6,7 @@
 
         <class>models.Users</class>
         <class>models.Rent</class>
+        <class>models.Fines</class>
         <properties>
             <!--
                                         <property name="hibernate.connection.url" value="jdbc:postgresql://pg:5432/studs"/>

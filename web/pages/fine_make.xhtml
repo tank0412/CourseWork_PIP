@@ -12,6 +12,26 @@
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+            <h:form>
+                <h:outputText value="Enter Fine:" />
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="Client ID:" />
+                    <p:inputText  value="#{EnterFines.client_ID}" converterId="javax.faces.Long" style="font-weight: bold"/>
+
+                    <h:outputText value="Date get fine:" />
+                    <p:inputText value="#{EnterFines.date_get_fine}" style="font-weight: bold">
+                        <f:convertDateTime pattern="yyyy-MM-dd"/>
+                    </p:inputText>
+
+                    <h:outputText value="Reason of fine:" />
+                    <p:inputText value="#{EnterFines.reason_of_fine}" style="font-weight: bold"/>
+
+                    <h:outputText value="Fine price:" />
+                    <p:inputText value="#{EnterFines.fine_price}" converterId="javax.faces.Long" style="font-weight: bold"/>
+
+                </h:panelGrid>
+                <p:commandButton value="Submit rent" actionListener="#{EnterFines.enter}"/>
+            </h:form>
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>

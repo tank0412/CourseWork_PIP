@@ -45,8 +45,8 @@
     </role>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-31.16:01:29.965</IntrospectionTimestamp>
-      <IntrospectionStateNumber>706</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-03-31.20:46:49.530</IntrospectionTimestamp>
+      <IntrospectionStateNumber>714</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -166,35 +166,35 @@
       <TypeId>20</TypeId>
       <SequenceName>fines_id_seq</SequenceName>
     </column>
-    <column id="30" parent="23" name="Client_ID">
+    <column id="30" parent="23" name="сlient_id">
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>711</StateNumber>
       <DefaultExpression>nextval(&apos;&quot;fines_Client_ID_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>fines_Client_ID_seq</SequenceName>
     </column>
-    <column id="31" parent="23" name="Date_get_fine">
+    <column id="31" parent="23" name="date_get_fine">
       <Position>3</Position>
       <DataType>timestamp with time zone|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>712</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="32" parent="23" name="Reason_of_fine">
+    <column id="32" parent="23" name="reason_of_fine">
       <Position>4</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>713</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="33" parent="23" name="Fine_price">
+    <column id="33" parent="23" name="fine_price">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>714</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="34" parent="23" name="fines_pkey">
@@ -210,7 +210,7 @@
     </key>
     <foreign-key id="36" parent="23" name="fines_Client_ID_fkey">
       <ObjectId>16880</ObjectId>
-      <ColNames>Client_ID</ColNames>
+      <ColNames>сlient_id</ColNames>
       <RefTableId>16648</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
