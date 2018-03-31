@@ -45,6 +45,9 @@ public class AuthChecking {
             this.user = user;
             FacesContext facesContext = FacesContext.getCurrentInstance();
             String outcome = "main.xhtml";
+            if (ud.isAdmin(userId) == true) {
+                outcome = "main_admin.xhtml";
+            }
             try {
                 facesContext.getExternalContext().redirect(outcome);
             }

@@ -45,8 +45,8 @@
     </role>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-31.11:54:45.334</IntrospectionTimestamp>
-      <IntrospectionStateNumber>686</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-03-31.16:01:29.965</IntrospectionTimestamp>
+      <IntrospectionStateNumber>706</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -131,11 +131,11 @@
     </table>
     <table id="24" parent="9" name="rent">
       <ObjectId>16891</ObjectId>
-      <StateNumber>680</StateNumber>
+      <StateNumber>693</StateNumber>
     </table>
     <table id="25" parent="9" name="users">
       <ObjectId>16648</ObjectId>
-      <StateNumber>672</StateNumber>
+      <StateNumber>706</StateNumber>
     </table>
     <column id="26" parent="22" name="id">
       <Position>1</Position>
@@ -349,12 +349,18 @@
       <StateNumber>619</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="55" parent="25" name="users_pkey">
+    <column id="55" parent="25" name="isadmin">
+      <Position>19</Position>
+      <DataType>boolean|0</DataType>
+      <StateNumber>706</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="56" parent="25" name="users_pkey">
       <ObjectId>16659</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="56" parent="25" name="users_pkey">
+    <key id="57" parent="25" name="users_pkey">
       <ObjectId>16660</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>

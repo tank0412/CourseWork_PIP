@@ -12,6 +12,7 @@ public class Users implements Serializable {
     private String name;
     private Date registrationDate;
     private String jid;
+    private Boolean isadmin;
     /**
      * The amount available to the user
      */
@@ -36,6 +37,16 @@ public class Users implements Serializable {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Basic
+    @Column(name = "isadmin")
+    public boolean getisadmin() {
+        return isadmin;
+    }
+
+    public void setisadmin(Boolean isadmin) {
+        this.isadmin = isadmin;
     }
 
     @Basic
@@ -98,6 +109,7 @@ public class Users implements Serializable {
     public void setHash(Long hash) {
         this.hash = hash;
     }
+
 
     @Override
     public boolean equals(Object o) {

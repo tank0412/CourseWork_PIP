@@ -2,6 +2,7 @@ package dao;
 
 
 import models.Users;
+import org.primefaces.context.RequestContext;
 import templates.ICrud;
 import util.JPAUtil;
 
@@ -142,6 +143,22 @@ public class UserDao extends ICrud<Users> {
             }
         }
         return user;
+    }
+    public boolean isAdmin(Long id) {
+        List users;
+        Users user = null;
+            if (em == null || !em.isOpen())
+                em = JPAUtil.getEntityManager();
+           Query query = em.createQuery("from Users where id = :param and isadmin = true" ).setParameter("param", id);
+        List<Users> result = (List<Users>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+            if (result.size() == 0) {
+                RequestContext.getCurrentInstance().execute("alert('Not admin');");
+                return false;
+            }
+            else
+               RequestContext.getCurrentInstance().execute("alert('admin');");
+                return true;
     }
 
     }
