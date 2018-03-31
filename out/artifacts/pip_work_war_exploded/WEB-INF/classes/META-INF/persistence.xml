@@ -4,14 +4,7 @@
     <persistence-unit name="PostDB">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>models.Chats</class>
         <class>models.Users</class>
-        <class>models.Messages</class>
-        <class>models.Ranks</class>
-        <class>models.Transactions</class>
-        <class>models.Orders</class>
-        <class>models.Assignment</class>
-        <class>models.Requestexec</class>
         <properties>
             <!--
                                         <property name="hibernate.connection.url" value="jdbc:postgresql://pg:5432/studs"/>

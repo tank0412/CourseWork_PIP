@@ -12,6 +12,27 @@
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+            <h:form>
+                <h:outputText value="Enter Rent:" />
+                <h:panelGrid columns="2" cellpadding="5">
+                    <h:outputText value="Car ID :" />
+                    <p:inputText type="password" value="#{EnterRent.Car_ID}" style="font-weight: bold"/>
+
+                    <h:outputText value="Client ID:" />
+                    <p:inputText type="password" value="#{EnterRent.Client_ID}" style="font-weight: bold"/>
+
+                    <h:outputText value="Date start rent:" />
+                    <p:inputText type="password" value="#{EnterRent.Date_start_rent}" style="font-weight: bold"/>
+
+                    <h:outputText value="Date end rent:" />
+                    <p:inputText type="password" value="#{EnterRent.Date_end_rent}" style="font-weight: bold"/>
+
+                    <h:outputText value="Price of rent:" />
+                    <p:inputText type="password" value="#{EnterRent.Price_of_rent}" style="font-weight: bold"/>
+
+                </h:panelGrid>
+                <p:commandButton value="Submit rent" actionListener="#{EnterRent.enter}"/>
+            </h:form>
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>
