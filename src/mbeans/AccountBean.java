@@ -105,7 +105,7 @@ public class AccountBean implements Serializable {
         try {
             xm = new XmppManager("jabber.ru", 5222);
             xm.init();
-            xm.performLogin("arck1pip", "123456arck");
+            xm.performLogin("tank0412", "pip0412");
             xm.sendMessage("This is test message for user №" + Long.toString(user.getId()), user.getJid());
         }
         catch (Exception e)
