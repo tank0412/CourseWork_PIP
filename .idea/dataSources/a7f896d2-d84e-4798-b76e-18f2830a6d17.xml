@@ -45,8 +45,8 @@
     </role>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-31.07:42:34.429</IntrospectionTimestamp>
-      <IntrospectionStateNumber>668</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-03-31.11:54:45.334</IntrospectionTimestamp>
+      <IntrospectionStateNumber>686</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -131,11 +131,11 @@
     </table>
     <table id="24" parent="9" name="rent">
       <ObjectId>16891</ObjectId>
-      <StateNumber>667</StateNumber>
+      <StateNumber>680</StateNumber>
     </table>
     <table id="25" parent="9" name="users">
       <ObjectId>16648</ObjectId>
-      <StateNumber>664</StateNumber>
+      <StateNumber>672</StateNumber>
     </table>
     <column id="26" parent="22" name="id">
       <Position>1</Position>
@@ -226,45 +226,45 @@
       <TypeId>20</TypeId>
       <SequenceName>rent_id_seq</SequenceName>
     </column>
-    <column id="38" parent="24" name="Car_ID">
+    <column id="38" parent="24" name="car_id">
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>682</StateNumber>
       <DefaultExpression>nextval(&apos;&quot;rent_Car_ID_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_Car_ID_seq</SequenceName>
     </column>
-    <column id="39" parent="24" name="Client_ID">
+    <column id="39" parent="24" name="client_id">
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>683</StateNumber>
       <DefaultExpression>nextval(&apos;&quot;rent_Client_ID_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_Client_ID_seq</SequenceName>
     </column>
-    <column id="40" parent="24" name="Date_start_rent">
+    <column id="40" parent="24" name="date_start_rent">
       <Position>4</Position>
       <DataType>timestamp with time zone|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>684</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="41" parent="24" name="Date_end_rent">
+    <column id="41" parent="24" name="date_end_rent">
       <Position>5</Position>
       <DataType>timestamp with time zone|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>685</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1184</TypeId>
     </column>
-    <column id="42" parent="24" name="Price_of_rent">
+    <column id="42" parent="24" name="price_of_rent">
       <Position>6</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>686</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="43" parent="24" name="rent_pkey">
@@ -280,7 +280,7 @@
     </key>
     <foreign-key id="45" parent="24" name="rent_Car_ID_fkey">
       <ObjectId>16901</ObjectId>
-      <ColNames>Car_ID</ColNames>
+      <ColNames>car_id</ColNames>
       <RefTableId>16862</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>cars</RefTableName>
@@ -289,7 +289,7 @@
     </foreign-key>
     <foreign-key id="46" parent="24" name="rent_Client_ID_fkey">
       <ObjectId>16906</ObjectId>
-      <ColNames>Client_ID</ColNames>
+      <ColNames>client_id</ColNames>
       <RefTableId>16648</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
