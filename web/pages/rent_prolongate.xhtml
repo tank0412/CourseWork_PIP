@@ -27,7 +27,7 @@
                     <p:inputText value="#{EnterRent.price_of_rent}" converterId="javax.faces.Long" style="font-weight: bold"/>
 
                 </h:panelGrid>
-                <p:commandButton value="Prolongate rent" actionListener="#{EnterRent.prolongate}"/>
+                <p:commandButton value="Prolongate rent" actionListener="#{EnterRent.prolongate(accountBean.user.id)}"/>
             </h:form>
         </div>
         <div class="rightBlock align-self-start m-2">

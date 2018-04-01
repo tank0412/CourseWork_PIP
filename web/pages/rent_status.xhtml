@@ -26,6 +26,7 @@
                 </ui:define>
                 <ui:define name="content">
                     <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+                        <b>Аренда</b>
                         #{EnterRent.getrentbyID(accountBean.user.id)}
                         <h:dataTable value="#{EnterRent.allrent}" var="o">
 

@@ -1,7 +1,9 @@
 package mbeans;
 
 import dao.RentDao;
+import dao.Rent_prolongDao;
 import models.Rent;
+import models.Rent_prolong;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -48,9 +50,12 @@ public class EnterRent {
      //       RequestContext.getCurrentInstance().execute("alert('Registration failed');");
 
     }
-    public void prolongate() {
-        RentDao rd = new RentDao();
-        rd.prolongateRent(Rent_id,Date_end_rent, Price_of_rent);
+    public void prolongate(long Client_ID) {
+        Rent_prolong rent;
+        Rent_prolongDao rd = new Rent_prolongDao();
+        //public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
+        rent = new Rent_prolong(Rent_id, Client_ID, Date_end_rent, Price_of_rent );
+        rd.add(rent);
     }
     public void getrent() {
         RentDao fd = new RentDao();
