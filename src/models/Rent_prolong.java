@@ -5,8 +5,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "rent_prolongate")//, schema = "s225130"
-public class Rent_prolongate implements Serializable {
+@Table(name = "Rent_prolong")//, schema = "s225130"
+public class Rent_prolong implements Serializable {
     private Long id;
     private Long rent_ID;
     private Long Client_ID;
@@ -14,10 +14,10 @@ public class Rent_prolongate implements Serializable {
     private Long new_price_of_rent;
     private Boolean isconfirmed;
 
-    public Rent_prolongate() {
+    public Rent_prolong() {
     }
 
-    public Rent_prolongate(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
+    public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
         this.rent_ID = rent_ID;
         this.Client_ID = client_ID;
         this.new_date_end_rent = new_date_end_rent;

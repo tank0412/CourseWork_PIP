@@ -10,50 +10,10 @@
     <list default="true" id="763fc5ad-f37e-4728-9b8d-903329bb870a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7f896d2-d84e-4798-b76e-18f2830a6d17.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a7f896d2-d84e-4798-b76e-18f2830a6d17.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7f896d2-d84e-4798-b76e-18f2830a6d17/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/a7f896d2-d84e-4798-b76e-18f2830a6d17/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_ejb_exploded/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_ejb_exploded/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war/pip_work_war.war" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war/pip_work_war.war" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/classes/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/faces-config.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/index.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/pages/main.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/pages/main.xhtml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-grid.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-grid.min.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-reboot.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap-reboot.min.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.bundle.min.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/jquery-3.2.1.min.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/popper.js" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war_exploded/resources/js/popper.js" />
-      <change beforePath="$PROJECT_DIR$/out/production/pip_work/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/out/production/pip_work/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/pip_work.iml" afterPath="$PROJECT_DIR$/pip_work.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/cars.xhtml" afterPath="$PROJECT_DIR$/web/pages/cars.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/fine.xhtml" afterPath="$PROJECT_DIR$/web/pages/fine.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/main.xhtml" afterPath="$PROJECT_DIR$/web/pages/main.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/main_admin.xhtml" afterPath="$PROJECT_DIR$/web/pages/main_admin.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/mainpage.xhtml" afterPath="$PROJECT_DIR$/web/pages/mainpage.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/pages/make_admin.xhtml" afterPath="$PROJECT_DIR$/web/pages/make_admin.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-grid.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-grid.min.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-reboot.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-reboot.min.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.bundle.min.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/web/resources/js/jquery-3.2.1.min.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/popper.js" afterPath="$PROJECT_DIR$/web/resources/js/popper.js" />
-      <change beforePath="$PROJECT_DIR$/Новый текстовый документ.txt" afterPath="$PROJECT_DIR$/Новый текстовый документ.txt" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Rent_prolongateDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/models/Rent_prolongate.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,25 +73,7 @@
         <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fines: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rent: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rent_prolongate: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="rent_prolong: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -144,7 +86,7 @@
       <file leaf-file-name="rent_status.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/rent_status.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="0">
               <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="67" />
               <folding />
             </state>
@@ -172,7 +114,7 @@
       <file leaf-file-name="RentDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
+            <state relative-caret-position="60">
               <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
               <folding>
                 <marker date="1522585034430" expanded="true" signature="2842:2928" ph="update Rent... " />
@@ -181,34 +123,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnterRent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mbeans/EnterRent.java">
+      <file leaf-file-name="Rent_prolongDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/Rent_prolongDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="391">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2192#2193#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rent_prolongate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Rent_prolongate.java">
+      <file leaf-file-name="Rent_prolong.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Rent_prolong.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -283,8 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ejb/XmppManager.java" />
-        <option value="$PROJECT_DIR$/src/mbeans/AccountBean.java" />
         <option value="$PROJECT_DIR$/src/mbeans/ChatsBean.java" />
         <option value="$PROJECT_DIR$/web/pages/tasks.xhtml" />
         <option value="$PROJECT_DIR$/src/mbeans/TaskBean.java" />
@@ -312,10 +251,8 @@
         <option value="$PROJECT_DIR$/src/models/Users.java" />
         <option value="$PROJECT_DIR$/src/mbeans/FineBean.java" />
         <option value="$PROJECT_DIR$/src/dao/FineDao.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/mbeans/FinesBean.java" />
         <option value="$PROJECT_DIR$/web/pages/fine_make.xhtml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql" />
         <option value="$PROJECT_DIR$/src/models/Fines.java" />
         <option value="$PROJECT_DIR$/src/mbeans/AuthChecking.java" />
         <option value="$PROJECT_DIR$/web/pages/make_admin.xhtml" />
@@ -334,6 +271,10 @@
         <option value="$PROJECT_DIR$/web/pages/rent_status.xhtml" />
         <option value="$PROJECT_DIR$/web/pages/rent_make.xhtml" />
         <option value="$PROJECT_DIR$/src/mbeans/EnterRent.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/models/Rent_prolong.java" />
+        <option value="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" />
       </list>
     </option>
   </component>
@@ -757,12 +698,12 @@
       <workItem from="1522468351174" duration="6687000" />
       <workItem from="1522555580456" duration="5999000" />
       <workItem from="1522576063620" duration="6150000" />
-      <workItem from="1522590913902" duration="115000" />
+      <workItem from="1522590913902" duration="672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272849000" />
+    <option name="totallyTimeSpent" value="273406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,28 +719,30 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13361612" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.1328125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.13645834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.8671875" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25551876" sideWeight="0.16004184" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.83995813" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.4964249" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5035751" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13493724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13361612" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.86354166" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25551876" sideWeight="0.16004184" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29056203" sideWeight="0.5015625" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.83995813" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497309" sideWeight="0.5035751" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -811,9 +754,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29056203" sideWeight="0.50364584" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
     </layout>
@@ -831,24 +772,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mbeans/PeopleBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/cars.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rest/RestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -944,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mbeans/FinesBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1000,6 +916,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="177" column="5" lean-forward="true" selection-start-line="162" selection-start-column="3" selection-end-line="177" selection-end-column="5" />
+          <folding>
+            <marker date="1522556800190" expanded="true" signature="4912:4961" ph="update Users... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,6 +1028,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,16 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
-          <folding>
-            <marker date="1522585034430" expanded="true" signature="2842:2928" ph="update Rent... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/account_admin.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1164,7 +1074,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/rent_status.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="0">
           <caret line="28" column="67" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="67" />
           <folding />
         </state>
@@ -1185,21 +1095,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mbeans/EnterRent.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2192#2193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Rent_prolongate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="380">
+          <caret line="190" column="26" lean-forward="false" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1207,8 +1106,55 @@
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Rent_prolongate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mbeans/EnterRent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#2162#2163#0" expanded="false" />
+            <element signature="e#2192#2193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding>
+            <marker date="1522585034430" expanded="true" signature="2842:2928" ph="update Rent... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Rent_prolong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/Rent_prolongDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
