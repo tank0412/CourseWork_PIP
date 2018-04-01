@@ -17,6 +17,7 @@ public class AuthChecking {
     private String login;
     private String pass;
     private Users user;
+    private Long Client_ID;
 
     public void checkIsAdmin() {
         Users user;
@@ -102,6 +103,11 @@ public class AuthChecking {
         else
             RequestContext.getCurrentInstance().execute("alert('Registration failed');");
     }
+    public void makeadmin() {
+        UserDao ud = new UserDao();
+        ud.makeAdmin(Client_ID);
+
+    }
     public String getPass() {
         return pass;
     }
@@ -158,6 +164,14 @@ public class AuthChecking {
 
     public void setUser(Users user) {
         this.user = user;
+    }
+
+    public Long getClient_ID() {
+        return Client_ID;
+    }
+
+    public void setClient_ID(Long Client_ID) {
+        this.Client_ID = Client_ID;
     }
 
 }

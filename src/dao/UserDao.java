@@ -160,6 +160,22 @@ public class UserDao extends ICrud<Users> {
               // RequestContext.getCurrentInstance().execute("alert('admin');");
                 return true;
     }
+    public void makeAdmin(Long id) {
+        List users;
+        Users user = null;
+        if (em == null || !em.isOpen())
+            em = JPAUtil.getEntityManager();
+        Query query = em.createNativeQuery("update Users set isadmin = true where id = :param" ).setParameter("param", id);
+        List<Users> result = (List<Users>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+        if (result.size() == 0) { // Не работает TODO: Пофиксить вывод успешности/неуспешности запроса
+            RequestContext.getCurrentInstance().execute("alert('Make admin unsuccessful');");
+            return;
+        }
+        else
+            RequestContext.getCurrentInstance().execute("alert('Make admin successful');");
+            return;
+    }
 
     }
 
