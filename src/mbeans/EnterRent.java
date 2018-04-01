@@ -20,6 +20,8 @@ public class EnterRent {
     private Date Date_start_rent;
     private Date Date_end_rent;
     private Long Price_of_rent;
+    private Boolean isconfirmed;
+    private Boolean isprolongated;
     public ArrayList<Rent> allrent;
 
     public void enter(long Client_ID) {
@@ -84,6 +86,8 @@ public class EnterRent {
     public ArrayList<Rent> getallrent() {
         return allrent;
     }
+    public Boolean getisprolongated() { return isprolongated; }
+    public Boolean getisisconfirmed() { return isconfirmed; }
 
     public void setCar_ID(Long Car_ID) {
         this.Car_ID = Car_ID;
@@ -109,7 +113,8 @@ public class EnterRent {
     public void setallrent(ArrayList<Rent>  allrent) {
         this.allrent = allrent;
     }
-
+    public void setisprolongated(Boolean isprolongate) { this.isprolongated = isprolongate; }
+    public void setisconfirmed(Boolean isconfirmed) { this.isconfirmed = isconfirmed; }
 
 
     // public Long getUserId() {
