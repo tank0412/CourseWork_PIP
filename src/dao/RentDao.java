@@ -2,12 +2,14 @@ package dao;
 
 
 import models.Rent;
+import org.primefaces.context.RequestContext;
 import templates.ICrud;
 import util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -92,6 +94,26 @@ public class RentDao extends ICrud<Rent> {
             }
         }
         return user;
+    }
+    public void prolongateRent(Long rentid, Date newDate_end_rent, Long newPrice_of_rent) {
+        List rents;
+        Rent rent = null;
+        if (em == null || !em.isOpen())
+            em = JPAUtil.getEntityManager();
+        Query query = em.createNativeQuery("update Rent set price_of_rent = :newprice,date_end_rent = :newdate  where id = :rentid" );
+        query.setParameter("rentid", rentid);
+        query.setParameter("newdate", newDate_end_rent);
+        query.setParameter("newprice", newPrice_of_rent);
+
+        List<Rent> result = (List<Rent>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+        if (result.size() == 0) { // Не работает TODO: Пофиксить вывод успешности/неуспешности запроса
+            RequestContext.getCurrentInstance().execute("alert('Make admin unsuccessful');");
+            return;
+        }
+        else
+            RequestContext.getCurrentInstance().execute("alert('Make admin successful');");
+        return;
     }
 
 

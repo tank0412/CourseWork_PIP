@@ -15,6 +15,7 @@ public class EnterRent {
     private Long id;
     private Long Car_ID;
     private Long Client_ID;
+    private Long Rent_id;
     private Date Date_start_rent;
     private Date Date_end_rent;
     private Long Price_of_rent;
@@ -45,12 +46,19 @@ public class EnterRent {
      //       RequestContext.getCurrentInstance().execute("alert('Registration failed');");
 
     }
+    public void prolongate() {
+        RentDao rd = new RentDao();
+        rd.prolongateRent(Rent_id,Date_end_rent, Price_of_rent);
+    }
     public Long getCar_ID() {
         return Car_ID;
     }
 
     public Long getClient_ID() {
         return Client_ID;
+    }
+    public Long getRent_id() {
+        return Rent_id;
     }
     public Date getDate_start_rent() {
         return Date_start_rent;
@@ -68,6 +76,10 @@ public class EnterRent {
 
     public void setClient_ID(Long Client_ID) {
         this.Client_ID = Client_ID;
+    }
+
+    public void setRent_id(Long Rent_id) {
+        this.Rent_id = Rent_id;
     }
 
     public void setDate_start_rent(Date Date_start_rent) {
