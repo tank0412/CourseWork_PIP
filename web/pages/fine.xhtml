@@ -12,6 +12,35 @@
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+            #{EnterFines.getfinebyID(accountBean.user.id)}
+            <h:dataTable value="#{EnterFines.allfines}" var="o">
+
+                <h:column>
+                    <f:facet name="header">id</f:facet>
+                    #{o.id}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Client_ID</f:facet>
+                    #{o.client_ID}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Date_get_fine</f:facet>
+                    #{o.date_get_fine}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Reason_of_fine</f:facet>
+                    #{o.reason_of_fine}
+
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Fine_price</f:facet>
+                    #{o.fine_price}
+                </h:column>
+
+            </h:dataTable>
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>

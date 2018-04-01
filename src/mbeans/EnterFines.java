@@ -5,6 +5,7 @@ import models.Fines;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.util.ArrayList;
 import java.util.Date;
 
 @ManagedBean(name = "EnterFines")
@@ -17,6 +18,7 @@ public class EnterFines {
     private Date Date_get_fine;
     private String Reason_of_fine;
     private Long Fine_price;
+    public ArrayList<Fines> allfines;
 
     public void enter() {
         Fines fines;
@@ -26,6 +28,16 @@ public class EnterFines {
         //if(fines == null){
         //Fines(Long Client_ID, Date Date_get_fine, String Reason_of_fine, Long Fine_price);
         fd.add(fines);
+    }
+    public void getfine() {
+        FinesDao fd = new FinesDao();
+        allfines = fd.getAll();
+
+    }
+    public void getfinebyID(long Client_ID) {
+        FinesDao fd = new FinesDao();
+        allfines = fd.getByclientid(Client_ID);
+
     }
 
     public Long getClient_ID() {
@@ -39,6 +51,9 @@ public class EnterFines {
     }
     public Long getFine_price() {
         return Fine_price;
+    }
+    public ArrayList<Fines> getallfines() {
+        return allfines;
     }
 
 
@@ -54,5 +69,8 @@ public class EnterFines {
     }
     public void setFine_price(Long Fine_price) {
         this.Fine_price = Fine_price;
+    }
+    public void setallfines(ArrayList<Fines>  allfines) {
+        this.allfines = allfines;
     }
 }

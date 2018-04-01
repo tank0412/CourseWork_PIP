@@ -8,7 +8,6 @@ import util.JPAUtil;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -71,8 +70,8 @@ public class FinesDao extends ICrud<Fines> {
      * @param Client_ID of client_id
      * @return Entity object of Fines.class
      */
-    public Fines getByclientid(long Client_ID) {
-        List fines;
+    public  ArrayList<Fines> getByclientid(long Client_ID) {
+        ArrayList<Fines> fines = null;
         Fines user = null;
         try {
             if (em == null || !em.isOpen())
@@ -81,7 +80,7 @@ public class FinesDao extends ICrud<Fines> {
          //  Query query = em.createQuery("from Users where name = :param").setParameter("param", Client_ID);
             if (query == null)
                 return null;
-            fines = query.getResultList();
+            fines =(ArrayList<Fines>) query.getResultList();
             if (fines != null && fines.size() > 0)
                 user = (Fines) fines.get(0);
         } catch (Exception e) {
@@ -91,7 +90,7 @@ public class FinesDao extends ICrud<Fines> {
                 em.close();
             }
         }
-        return user;
+        return fines;
     }
 
 
