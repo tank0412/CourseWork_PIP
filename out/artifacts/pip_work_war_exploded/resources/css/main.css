@@ -50,7 +50,7 @@ body {
     overflow-y: scroll;
 }
 
-@media screen and (max-width: 1210px){
+@media screen and (max-width: 1209px){
     .header {
         width: 100%;
     }
@@ -72,7 +72,7 @@ body {
     }
 }
 
-@media screen and (max-width: 692px){
+@media screen and (max-width: 663px){
     .header {
         width: 100%;
     }

@@ -8,7 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763fc5ad-f37e-4728-9b8d-903329bb870a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dao/FinesDao.java" afterPath="$PROJECT_DIR$/src/dao/FinesDao.java" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/auth.css" afterPath="$PROJECT_DIR$/web/resources/css/auth.css" />
+      <change beforePath="$PROJECT_DIR$/web/resources/css/main.css" afterPath="$PROJECT_DIR$/web/resources/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,21 +106,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FinesDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
+      <file leaf-file-name="auth.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/css/auth.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resources/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -157,6 +158,8 @@
       <find>car_id</find>
       <find>Client_ID</find>
       <find>rent</find>
+      <find>1210</find>
+      <find>692</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,10 +173,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/glassfish-web.xml" />
         <option value="$PROJECT_DIR$/src/mbeans/MainBean.java" />
         <option value="$PROJECT_DIR$/web/pages/main.xhtml" />
-        <option value="$PROJECT_DIR$/web/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/mbeans/TransactionBean.java" />
         <option value="$PROJECT_DIR$/src/ejb/XmppManager.java" />
         <option value="$PROJECT_DIR$/src/mbeans/AccountBean.java" />
@@ -221,6 +222,8 @@
         <option value="$PROJECT_DIR$/web/pages/make_admin.xhtml" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/dao/FinesDao.java" />
+        <option value="$PROJECT_DIR$/web/resources/css/main.css" />
+        <option value="$PROJECT_DIR$/web/resources/css/auth.css" />
       </list>
     </option>
   </component>
@@ -337,6 +340,19 @@
               <item name="pip_work" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pip_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pip_work" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pip_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pip_work" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pip_work" type="b2602c69:ProjectViewProjectNode" />
@@ -642,12 +658,12 @@
       <workItem from="1522386349622" duration="4204000" />
       <workItem from="1522402568106" duration="10602000" />
       <workItem from="1522468351174" duration="6687000" />
-      <workItem from="1522555580456" duration="1571000" />
+      <workItem from="1522555580456" duration="1992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260703000" />
+    <option name="totallyTimeSpent" value="261124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,20 +732,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/pages/mainpage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/template.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/header_guest.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1097,6 +1099,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1105,10 +1115,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/css/auth.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="272">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
           <folding />
         </state>
       </provider>

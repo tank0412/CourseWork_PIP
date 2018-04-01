@@ -7,7 +7,7 @@ body {
 }
 
 
-@media screen and (max-width: 1210px){
+@media screen and (max-width: 1209px){
     .auth {
         width: 100%;
         height: 100%;
@@ -22,7 +22,7 @@ body {
     }
 }
 
-@media screen and (max-width: 692px){
+@media screen and (max-width: 663px){
     .auth {
         height: 100%;
     }
