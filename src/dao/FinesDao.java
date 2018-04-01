@@ -12,7 +12,7 @@ import java.util.List;
 
 
 /**
- * Util class for Rent Entity
+ * Util class for Fines Entity
  */
 
 public class FinesDao extends ICrud<Fines> {
@@ -23,9 +23,9 @@ public class FinesDao extends ICrud<Fines> {
     }
 
     /**
-     *  Return Rent Entity of id
-     * @param id rent id
-     * @return Entity object of Rent.class
+     *  Return Fines Entity of id
+     * @param id Fines id
+     * @return Entity object of Fines.class
      */
 
     public Fines getById(long id) {
@@ -45,17 +45,17 @@ public class FinesDao extends ICrud<Fines> {
     }
 
     /**
-     * Return all Rent from database
-     * @return ArrayList with Entitys of Rent.class
+     * Return all Fines from database
+     * @return ArrayList with Entitys of Fines.class
      */
 
     public ArrayList<Fines> getAll() {
-        ArrayList<Fines> rent = null;
+        ArrayList<Fines> fine = null;
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-            Query query = em.createQuery("from Rent");
-            rent = (ArrayList<Fines>) query.getResultList();
+            Query query = em.createQuery("from Fines ");
+            fine = (ArrayList<Fines>) query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
@@ -63,7 +63,7 @@ public class FinesDao extends ICrud<Fines> {
                 em.close();
             }
         }
-        return rent;
+        return fine;
     }
 
     /**
@@ -72,7 +72,7 @@ public class FinesDao extends ICrud<Fines> {
      * @return Entity object of Fines.class
      */
     public Fines getByclientid(long Client_ID) {
-        List rents;
+        List fines;
         Fines user = null;
         try {
             if (em == null || !em.isOpen())
@@ -81,9 +81,9 @@ public class FinesDao extends ICrud<Fines> {
          //  Query query = em.createQuery("from Users where name = :param").setParameter("param", Client_ID);
             if (query == null)
                 return null;
-            rents = query.getResultList();
-            if (rents != null && rents.size() > 0)
-                user = (Fines) rents.get(0);
+            fines = query.getResultList();
+            if (fines != null && fines.size() > 0)
+                user = (Fines) fines.get(0);
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

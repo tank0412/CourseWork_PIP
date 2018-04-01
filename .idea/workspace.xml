@@ -8,11 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763fc5ad-f37e-4728-9b8d-903329bb870a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/894eb36e-8498-44a4-866d-992d9e44cb24.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/mbeans/AuthChecking.java" afterPath="$PROJECT_DIR$/src/mbeans/AuthChecking.java" />
-      <change beforePath="$PROJECT_DIR$/web/templates/header_admin.xhtml" afterPath="$PROJECT_DIR$/web/templates/header_admin.xhtml" />
+      <change beforePath="$PROJECT_DIR$/src/dao/FinesDao.java" afterPath="$PROJECT_DIR$/src/dao/FinesDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,47 +105,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthChecking.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mbeans/AuthChecking.java">
+      <file leaf-file-name="FinesDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="25" />
-              <folding>
-                <element signature="e#4606#4607#0" expanded="true" />
-                <element signature="e#4638#4639#0" expanded="true" />
-                <element signature="e#4686#4687#0" expanded="true" />
-                <element signature="e#4728#4729#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+      <file leaf-file-name="RentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="170" column="102" lean-forward="false" selection-start-line="170" selection-start-column="102" selection-end-line="170" selection-end-column="102" />
-              <folding>
-                <marker date="1522556800190" expanded="true" signature="4912:4961" ph="update Users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users" pinned="false" current-in-tab="false">
-        <entry file="das://table:/d5e0fabf/a7f896d2-d84e-4798-b76e-18f2830a6d17/postgres.public.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="make_admin.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/pages/make_admin.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+            <state relative-caret-position="190">
+              <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -186,6 +156,7 @@
       <find>setLogin</find>
       <find>car_id</find>
       <find>Client_ID</find>
+      <find>rent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -240,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/mbeans/FineBean.java" />
         <option value="$PROJECT_DIR$/src/dao/FineDao.java" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/dao/FinesDao.java" />
         <option value="$PROJECT_DIR$/src/mbeans/FinesBean.java" />
         <option value="$PROJECT_DIR$/web/pages/fine_make.xhtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql" />
@@ -250,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/mbeans/AuthChecking.java" />
         <option value="$PROJECT_DIR$/web/pages/make_admin.xhtml" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/FinesDao.java" />
       </list>
     </option>
   </component>
@@ -671,12 +642,12 @@
       <workItem from="1522386349622" duration="4204000" />
       <workItem from="1522402568106" duration="10602000" />
       <workItem from="1522468351174" duration="6687000" />
-      <workItem from="1522555580456" duration="1228000" />
+      <workItem from="1522555580456" duration="1571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260360000" />
+    <option name="totallyTimeSpent" value="260703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -856,6 +827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -941,20 +913,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/FineDao.java" />
     <entry file="file://$PROJECT_DIR$/src/mbeans/FineBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="79" column="53" lean-forward="false" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mbeans/RentBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -998,16 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,16 +1059,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mbeans/AuthChecking.java">
+    <entry file="file://$PROJECT_DIR$/web/pages/make_admin.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="25" />
-          <folding>
-            <element signature="e#4606#4607#0" expanded="true" />
-            <element signature="e#4638#4639#0" expanded="true" />
-            <element signature="e#4686#4687#0" expanded="true" />
-            <element signature="e#4728#4729#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/d5e0fabf/a7f896d2-d84e-4798-b76e-18f2830a6d17/postgres.public.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1127,17 +1084,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d5e0fabf/a7f896d2-d84e-4798-b76e-18f2830a6d17/postgres.public.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/mbeans/AuthChecking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="25" />
+          <folding>
+            <element signature="e#4606#4607#0" expanded="false" />
+            <element signature="e#4638#4639#0" expanded="false" />
+            <element signature="e#4686#4687#0" expanded="false" />
+            <element signature="e#4728#4729#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/make_admin.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+        <state relative-caret-position="190">
+          <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/FinesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
