@@ -1,0 +1,21 @@
+CREATE TABLE "rent" (
+  "id" bigserial,
+  "car_ID" bigserial REFERENCES Cars ("id"),
+  "client_ID" bigserial REFERENCES users ("id"),
+  "date_start_rent"  DATE NOT NULL,
+  "date_end_rent"  DATE NOT NULL,
+  "price_of_rent" BIGINT NOT NULL
+);
+
+CREATE TABLE "fines" (
+  "id" bigserial,
+  "client_ID" bigserial REFERENCES users ("id"),
+  "date_get_fine"  DATE NOT NULL,
+  "reason_of_fine" VARCHAR(40) NOT NULL,
+  "fine_price" MONEY NOT NULL
+);
+
+CREATE TABLE "cars" (
+"id" bigserial
+);
+
