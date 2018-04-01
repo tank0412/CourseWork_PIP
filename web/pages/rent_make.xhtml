@@ -18,9 +18,6 @@
                     <h:outputText value="Car ID :" />
                     <p:inputText value="#{EnterRent.car_ID}" converterId="javax.faces.Long" style="font-weight: bold"/>
 
-                    <h:outputText value="Client ID:" />
-                    <p:inputText  value="#{EnterRent.client_ID}" converterId="javax.faces.Long" style="font-weight: bold"/>
-
                     <h:outputText value="Date start rent:" />
                     <p:inputText value="#{EnterRent.date_start_rent}" style="font-weight: bold">
                     <f:convertDateTime pattern="yyyy-MM-dd"/>
@@ -35,7 +32,7 @@
                     <p:inputText value="#{EnterRent.price_of_rent}" converterId="javax.faces.Long" style="font-weight: bold"/>
 
                 </h:panelGrid>
-                <p:commandButton value="Submit rent" actionListener="#{EnterRent.enter}"/>
+                <p:commandButton value="Submit rent" actionListener="#{EnterRent.enter(accountBean.user.id)}"/>
             </h:form>
         </div>
         <div class="rightBlock align-self-start m-2">

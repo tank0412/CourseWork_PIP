@@ -22,7 +22,7 @@ public class EnterRent {
     private Long Price_of_rent;
     public ArrayList<Rent> allrent;
 
-    public void enter() {
+    public void enter(long Client_ID) {
         Rent rent;
         RentDao rd = new RentDao();
         //rent = rd.getByNickname(login);
