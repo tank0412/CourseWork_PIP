@@ -19,3 +19,11 @@ CREATE TABLE "cars" (
 "id" bigserial
 );
 
+CREATE TABLE "rent_prolongate" (
+  "id" bigserial primary key,
+  "rent_ID" bigserial REFERENCES rent ("id"),
+  "client_ID" bigserial REFERENCES users ("id"),
+  "new_date_end_rent"  DATE NOT NULL,
+  "new_price_of_rent" BIGINT NOT NULL,
+  "isconfirmed" BOOLEAN
+);

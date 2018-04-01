@@ -6,6 +6,7 @@
 
         <class>models.Users</class>
         <class>models.Rent</class>
+        <class>models.Rent_prolongate</class>
         <class>models.Fines</class>
         <properties>
             <!--
