@@ -73,8 +73,8 @@ public class RentDao extends ICrud<Rent> {
      * @param Client_ID of client_id
      * @return Entity object of Rent.class
      */
-    public Rent getByclientid(long Client_ID) {
-        List rents;
+    public  ArrayList<Rent> getByclientid(long Client_ID) {
+        ArrayList<Rent> rents = null;
         Rent user = null;
         try {
             if (em == null || !em.isOpen())
@@ -83,7 +83,7 @@ public class RentDao extends ICrud<Rent> {
          //  Query query = em.createQuery("from Users where name = :param").setParameter("param", Client_ID);
             if (query == null)
                 return null;
-            rents = query.getResultList();
+            rents = ( ArrayList<Rent> )query.getResultList();
             if (rents != null && rents.size() > 0)
                 user = (Rent) rents.get(0);
         } catch (Exception e) {
@@ -93,7 +93,7 @@ public class RentDao extends ICrud<Rent> {
                 em.close();
             }
         }
-        return user;
+        return rents;
     }
     public void prolongateRent(Long rentid, Date newDate_end_rent, Long newPrice_of_rent) {
         List rents;

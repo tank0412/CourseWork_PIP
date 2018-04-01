@@ -5,6 +5,7 @@ import models.Rent;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.util.ArrayList;
 import java.util.Date;
 
 @ManagedBean(name = "EnterRent")
@@ -19,6 +20,7 @@ public class EnterRent {
     private Date Date_start_rent;
     private Date Date_end_rent;
     private Long Price_of_rent;
+    public ArrayList<Rent> allrent;
 
     public void enter() {
         Rent rent;
@@ -50,6 +52,16 @@ public class EnterRent {
         RentDao rd = new RentDao();
         rd.prolongateRent(Rent_id,Date_end_rent, Price_of_rent);
     }
+    public void getrent() {
+        RentDao fd = new RentDao();
+        allrent = fd.getAll();
+
+    }
+    public void getrentbyID(long Client_ID) {
+        RentDao rd = new RentDao();
+        allrent = rd.getByclientid(Client_ID);
+
+    }
     public Long getCar_ID() {
         return Car_ID;
     }
@@ -68,6 +80,9 @@ public class EnterRent {
     }
     public Long getPrice_of_rent() {
         return Price_of_rent;
+    }
+    public ArrayList<Rent> getallrent() {
+        return allrent;
     }
 
     public void setCar_ID(Long Car_ID) {
@@ -91,6 +106,10 @@ public class EnterRent {
     public void setPrice_of_rent(Long Price_of_rent) {
         this.Price_of_rent = Price_of_rent;
     }
+    public void setallrent(ArrayList<Rent>  allrent) {
+        this.allrent = allrent;
+    }
+
 
 
     // public Long getUserId() {

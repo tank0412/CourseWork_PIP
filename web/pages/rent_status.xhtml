@@ -12,6 +12,63 @@
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+
+            <ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                            xmlns:ui="http://java.sun.com/jsf/facelets"
+                            xmlns:h="http://java.sun.com/jsf/html"
+                            xmlns:p="http://primefaces.org/ui"
+                            xmlns:f="http://java.sun.com/jsf/core">
+                <ui:define name="head">
+                    <title>Main</title>
+                </ui:define>
+                <ui:define name="header">
+                    <ui:include src="../templates/header.xhtml"/>
+                </ui:define>
+                <ui:define name="content">
+                    <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+                        #{EnterRent.getrentbyID(accountBean.user.id)}
+                        <h:dataTable value="#{EnterRent.allrent}" var="o">
+
+                            <h:column>
+                                <f:facet name="header">id</f:facet>
+                                #{o.id}
+                            </h:column>
+
+                          <!--  <h:column>
+                                <f:facet name="header">car_ID</f:facet>
+                                #{o.car_ID}
+                            </h:column> -->
+
+                            <h:column>
+                                <f:facet name="header">Client_ID</f:facet>
+                                #{o.client_ID}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Date_start_rent</f:facet>
+                                #{o.date_start_rent}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Date_end_rent</f:facet>
+                                #{o.date_end_rent}
+
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Price_of_rent</f:facet>
+                                #{o.price_of_rent}
+                            </h:column>
+
+                        </h:dataTable>
+                    </div>
+                    <div class="rightBlock align-self-start m-2">
+                    </div>
+                </ui:define>
+                <ui:define name="footer">
+                    <ui:include src="../templates/footer.xhtml"/>
+                </ui:define>
+            </ui:composition>
+
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>
