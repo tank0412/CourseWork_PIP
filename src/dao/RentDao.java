@@ -131,6 +131,23 @@ public class RentDao extends ICrud<Rent> {
             RequestContext.getCurrentInstance().execute("alert('Make prolongateRent2 successful');");
         return;
     }
+    public void confirmRent(Long rentid) {
+        List rents;
+        Rent rent = null;
+        if (em == null || !em.isOpen())
+            em = JPAUtil.getEntityManager();
+        Query query = em.createNativeQuery("update rent set isconfirmed = TRUE where id = :rentid" ).setParameter("rentid", rentid);
+
+        List<Rent> result = (List<Rent>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+        if (result.size() == 0) { // Не работает TODO: Пофиксить вывод успешности/неуспешности запроса
+            RequestContext.getCurrentInstance().execute("alert('Make confirmRent unsuccessful');");
+            return;
+        }
+        else
+            RequestContext.getCurrentInstance().execute("alert('Make confirmRent successful');");
+        return;
+    }
 
 
     }

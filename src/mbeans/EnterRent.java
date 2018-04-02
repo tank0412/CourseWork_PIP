@@ -81,6 +81,16 @@ public class EnterRent {
         allRent_prolong = fd.getByclientid(Client_ID);
 
     }
+    public void confirmrentByID() {
+        RentDao fd = new RentDao();
+        fd.confirmRent(Rent_id);
+
+    }
+    public void confirmRent_prolonByID() {
+        Rent_prolongDao fd = new Rent_prolongDao();
+        fd.confirmRent(Rent_id);
+
+    }
     public Long getCar_ID() {
         return Car_ID;
     }

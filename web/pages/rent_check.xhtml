@@ -1,4 +1,3 @@
-
 <ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
@@ -8,10 +7,124 @@
         <title>Main</title>
     </ui:define>
     <ui:define name="header">
-        <ui:include src="../templates/header_admin.xhtml"/>
+        <ui:include src="../templates/header.xhtml"/>
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+
+            <ui:composition template="../templates/template.xhtml" xmlns="http://www.w3.org/1999/xhtml"
+                            xmlns:ui="http://java.sun.com/jsf/facelets"
+                            xmlns:h="http://java.sun.com/jsf/html"
+                            xmlns:p="http://primefaces.org/ui"
+                            xmlns:f="http://java.sun.com/jsf/core">
+                <ui:define name="head">
+                    <title>Main</title>
+                </ui:define>
+                <ui:define name="header">
+                    <ui:include src="../templates/header_admin.xhtml"/>
+                </ui:define>
+                <ui:define name="content">
+                    <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+                        <b>Аренда</b>
+                        #{EnterRent.getrent()}
+                        <h:dataTable value="#{EnterRent.allrent}" var="o">
+
+                            <h:column>
+                                <f:facet name="header">id</f:facet>
+                                #{o.id}
+                            </h:column>
+
+                            <!--<h:column>
+                                  <f:facet name="header">car_ID</f:facet>
+                                  #{o.car_ID}
+                              </h:column> -->
+
+                            <h:column>
+                                <f:facet name="header">Client_ID</f:facet>
+                                #{o.client_ID}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Date_start_rent</f:facet>
+                                #{o.date_start_rent}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Date_end_rent</f:facet>
+                                #{o.date_end_rent}
+
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Price_of_rent</f:facet>
+                                #{o.price_of_rent}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">isprolongated</f:facet>
+                                #{o.isprolongated}
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">isconfirmed</f:facet>
+                                #{o.isconfirmed}
+                            </h:column>
+                        </h:dataTable>
+                        <h:form>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputText value="Enter rent ID:" />
+                                <p:inputText  value="#{EnterRent.rent_id}" converterId="javax.faces.Long" style="font-weight: bold"/>
+                            </h:panelGrid>
+                            <p:commandButton value="Confirm rent" actionListener="#{EnterRent.confirmrentByID}"/>
+                        </h:form>
+                        <b>Продление аренды</b>
+                        #{EnterRent.getRent_prolong()}
+                        <h:dataTable value="#{EnterRent.allRent_prolong}" var="o">
+
+                            <h:column>
+                                <f:facet name="header">id</f:facet>
+                                #{o.id}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">rent_id</f:facet>
+                                #{o.rent_id}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Client_ID</f:facet>
+                                #{o.client_ID}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">new_date_end_rent</f:facet>
+                                #{o.new_date_end_rent}
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">new_price_of_rent</f:facet>
+                                #{o.new_price_of_rent}
+
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">isconfirmed</f:facet>
+                                #{o.isconfirmed}
+                            </h:column>
+                        </h:dataTable>
+                        <h:form>
+                            <h:panelGrid columns="2" cellpadding="5">
+                                <h:outputText value="Enter rent ID:" />
+                                <p:inputText  value="#{EnterRent.rent_id}" converterId="javax.faces.Long" style="font-weight: bold"/>
+                            </h:panelGrid>
+                            <p:commandButton value="Confirm rent prolong" actionListener="#{EnterRent.confirmRent_prolonByID}"/>
+                        </h:form>
+                    </div>
+                    <div class="rightBlock align-self-start m-2">
+                    </div>
+                </ui:define>
+                <ui:define name="footer">
+                    <ui:include src="../templates/footer.xhtml"/>
+                </ui:define>
+            </ui:composition>
+
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>

@@ -2,12 +2,14 @@ package dao;
 
 
 import models.Rent_prolong;
+import org.primefaces.context.RequestContext;
 import templates.ICrud;
 import util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -91,6 +93,23 @@ public class Rent_prolongDao extends ICrud<Rent_prolong> {
             }
         }
         return rents;
+    }
+    public void confirmRent(Long rentprolongid) {
+        List rents;
+        Rent_prolong rent = null;
+        if (em == null || !em.isOpen())
+            em = JPAUtil.getEntityManager();
+        Query query = em.createNativeQuery("update rent_prolong set isconfirmed = TRUE where id = :rentprolongid" ).setParameter("rentprolongid", rentprolongid);
+
+        List<Rent_prolong> result = (List<Rent_prolong>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+        if (result.size() == 0) { // Не работает TODO: Пофиксить вывод успешности/неуспешности запроса
+            RequestContext.getCurrentInstance().execute("alert('Make confirmRent unsuccessful');");
+            return;
+        }
+        else
+            RequestContext.getCurrentInstance().execute("alert('Make confirmRent successful');");
+        return;
     }
 
 
