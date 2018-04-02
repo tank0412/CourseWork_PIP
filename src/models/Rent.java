@@ -76,7 +76,7 @@ public class Rent implements Serializable {
     @Column(name = "isprolongated")
     public Boolean getisprolongated() { return isprolongated; }
 
-    public void setisprolongated(Boolean Date_end_rent) { this.isprolongated = isprolongated; }
+    public void setisprolongated(Boolean isprolongated) { this.isprolongated = isprolongated; }
 
     @Basic
     @Column(name = "isconfirmed")

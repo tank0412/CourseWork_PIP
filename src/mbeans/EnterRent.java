@@ -23,6 +23,7 @@ public class EnterRent {
     private Date Date_end_rent;
     private Long Price_of_rent;
     public ArrayList<Rent> allrent;
+    public ArrayList<Rent_prolong> allRent_prolong;
 
     public void enter(long Client_ID) {
         Rent rent;
@@ -70,6 +71,16 @@ public class EnterRent {
         allrent = rd.getByclientid(Client_ID);
 
     }
+    public void getRent_prolong() {
+        Rent_prolongDao fd = new Rent_prolongDao();
+        allRent_prolong = fd.getAll();
+
+    }
+    public void getRent_prolongbyID(long Client_ID) {
+        Rent_prolongDao fd = new Rent_prolongDao();
+        allRent_prolong = fd.getByclientid(Client_ID);
+
+    }
     public Long getCar_ID() {
         return Car_ID;
     }
@@ -91,6 +102,9 @@ public class EnterRent {
     }
     public ArrayList<Rent> getallrent() {
         return allrent;
+    }
+    public ArrayList<Rent_prolong> getallRent_prolong() {
+        return allRent_prolong;
     }
 
     public void setCar_ID(Long Car_ID) {
@@ -116,6 +130,9 @@ public class EnterRent {
     }
     public void setallrent(ArrayList<Rent>  allrent) {
         this.allrent = allrent;
+    }
+    public void setaallRent_prolong(ArrayList<Rent_prolong>  allrent) {
+        this.allRent_prolong = allRent_prolong;
     }
 
 
