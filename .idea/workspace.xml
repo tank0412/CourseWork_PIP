@@ -8,11 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763fc5ad-f37e-4728-9b8d-903329bb870a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pip_work_war/pip_work_war.war" afterPath="$PROJECT_DIR$/out/artifacts/pip_work_war/pip_work_war.war" />
-      <change beforePath="$PROJECT_DIR$/src/dao/RentDao.java" afterPath="$PROJECT_DIR$/src/dao/RentDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" afterPath="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/mbeans/EnterRent.java" afterPath="$PROJECT_DIR$/src/mbeans/EnterRent.java" />
       <change beforePath="$PROJECT_DIR$/web/pages/rent_check.xhtml" afterPath="$PROJECT_DIR$/web/pages/rent_check.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -149,8 +144,8 @@
       <file leaf-file-name="rent_check.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/pages/rent_check.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="75" column="80" lean-forward="false" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="29" lean-forward="false" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -299,8 +294,8 @@
         <option value="$PROJECT_DIR$/src/dao/RentDao.java" />
         <option value="$PROJECT_DIR$/web/templates/header_admin.xhtml" />
         <option value="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" />
-        <option value="$PROJECT_DIR$/web/pages/rent_check.xhtml" />
         <option value="$PROJECT_DIR$/src/mbeans/EnterRent.java" />
+        <option value="$PROJECT_DIR$/web/pages/rent_check.xhtml" />
       </list>
     </option>
   </component>
@@ -323,7 +318,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-166" />
     <option name="y" value="245" />
     <option name="width" value="1924" />
@@ -727,12 +722,12 @@
       <workItem from="1522590913902" duration="672000" />
       <workItem from="1522640107674" duration="6489000" />
       <workItem from="1522652610810" duration="1949000" />
-      <workItem from="1522677388692" duration="2955000" />
+      <workItem from="1522677388692" duration="3190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286836000" />
+    <option name="totallyTimeSpent" value="287071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,7 +739,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1189,8 +1184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/rent_check.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="75" column="80" lean-forward="false" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="29" lean-forward="false" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
           <folding />
         </state>
       </provider>
