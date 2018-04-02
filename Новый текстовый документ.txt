@@ -19,7 +19,7 @@ CREATE TABLE "cars" (
 "id" bigserial
 );
 
-CREATE TABLE "rent_prolongate" (
+CREATE TABLE "rent_prolong" (
   "id" bigserial primary key,
   "rent_ID" bigserial REFERENCES rent ("id"),
   "client_ID" bigserial REFERENCES users ("id"),
@@ -27,3 +27,5 @@ CREATE TABLE "rent_prolongate" (
   "new_price_of_rent" BIGINT NOT NULL,
   "isconfirmed" BOOLEAN
 );
+
+

@@ -2,15 +2,12 @@ package dao;
 
 
 import models.Rent_prolong;
-import org.primefaces.context.RequestContext;
 import templates.ICrud;
 import util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 
 /**
@@ -79,7 +76,7 @@ public class Rent_prolongDao extends ICrud<Rent_prolong> {
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-           Query query = em.createQuery("from Rent_prolong where Client_ID = :param").setParameter("param", Client_ID);
+           Query query = em.createQuery("from Rent_prolong where client_ID = :param").setParameter("param", Client_ID);
          //  Query query = em.createQuery("from Users where name = :param").setParameter("param", Client_ID);
             if (query == null)
                 return null;

@@ -50,12 +50,15 @@ public class EnterRent {
      //       RequestContext.getCurrentInstance().execute("alert('Registration failed');");
 
     }
-    public void prolongate(long Client_ID) {
+    public void prolongate(Long Client_ID) {
         Rent_prolong rent;
         Rent_prolongDao rd = new Rent_prolongDao();
         //public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
         rent = new Rent_prolong(Rent_id, Client_ID, Date_end_rent, Price_of_rent );
         rd.add(rent);
+        RentDao rd2 = new RentDao();
+         rd2.prolongateRent2(Rent_id);
+
     }
     public void getrent() {
         RentDao fd = new RentDao();

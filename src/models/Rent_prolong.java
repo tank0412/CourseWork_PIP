@@ -8,8 +8,8 @@ import java.util.Date;
 @Table(name = "Rent_prolong")//, schema = "s225130"
 public class Rent_prolong implements Serializable {
     private Long id;
-    private Long rent_ID;
-    private Long Client_ID;
+    private Long rent_id;
+    private Long client_id;
     private Date new_date_end_rent;
     private Long new_price_of_rent;
     private Boolean isconfirmed;
@@ -17,9 +17,9 @@ public class Rent_prolong implements Serializable {
     public Rent_prolong() {
     }
 
-    public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
-        this.rent_ID = rent_ID;
-        this.Client_ID = client_ID;
+    public Rent_prolong(Long rent_id,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
+        this.rent_id = rent_id;
+        this.client_id = client_ID;
         this.new_date_end_rent = new_date_end_rent;
         this.new_price_of_rent = new_price_of_rent;
     }
@@ -36,13 +36,23 @@ public class Rent_prolong implements Serializable {
     }
 
     @Basic
-    @Column(name = "rent_ID")
-    public Long getrent_ID() {
-        return rent_ID;
+    @Column(name = "rent_id")
+    public Long getrent_id() {
+        return rent_id;
     }
 
-    public void setrent_ID(Long rent_ID) {
-        this.rent_ID = rent_ID;
+    public void setrent_id(Long rent_ID) {
+        this.rent_id = rent_id;
+    }
+
+    @Basic
+    @Column(name = "client_id")
+    public Long getClient_ID() {
+        return client_id;
+    }
+
+    public void setClient_ID(Long client_id) {
+        this.client_id = client_id;
     }
 
     @Basic

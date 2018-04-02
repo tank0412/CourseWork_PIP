@@ -13,6 +13,8 @@ public class Rent implements Serializable {
     private Date Date_start_rent;
     private Date Date_end_rent;
     private Long Price_of_rent;
+    private Boolean isprolongated;
+    private Boolean isconfirmed;
 
     public Rent() {
     }
@@ -69,5 +71,17 @@ public class Rent implements Serializable {
     public Long getPrice_of_rent() { return Price_of_rent; }
 
     public void setPrice_of_rent(Long Price_of_rent) { this.Price_of_rent = Price_of_rent; }
+
+    @Basic
+    @Column(name = "isprolongated")
+    public Boolean getisprolongated() { return isprolongated; }
+
+    public void setisprolongated(Boolean Date_end_rent) { this.isprolongated = isprolongated; }
+
+    @Basic
+    @Column(name = "isconfirmed")
+    public Boolean getisconfirmed() { return isconfirmed; }
+
+    public void setisconfirmed(Boolean isconfirmed) { this.isconfirmed = isconfirmed; }
 
 }
