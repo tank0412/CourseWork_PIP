@@ -41,7 +41,7 @@ public class Rent_prolong implements Serializable {
         return rent_id;
     }
 
-    public void setrent_id(Long rent_ID) {
+    public void setrent_id(Long rent_id) {
         this.rent_id = rent_id;
     }
 
