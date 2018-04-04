@@ -14,27 +14,12 @@ public class EnterMessage {
     public String Message = "DefaultText";
 
     public void sentMessage() {
-        /*
-        Tunnel tunnel =  Tunnel.newInstance("queue", "localhost");
-         Consumer consumer = new Consumer(tunnel,"queue");
-         tunnel.publish("HelloWorld");
-         Message = tunnel.receive();
-         tunnel.disconnect();
-         tunnel.close();
-         */
-
         Tunnel tunnel =  Tunnel.newInstance("queue", "localhost");
         Producer producer = new Producer(tunnel,"queue");
         Consumer consumer = new Consumer(tunnel,"queue");
         producer.send("HelloWorld");
         Message = consumer.receive();
-
-       // Producer producer = new Producer("queue", "localhost");
-        //producer.send("HelloWorld");
-       // Consumer consumer = new Consumer("queue", "localhost");
-       //Tunnel tunnel =  Tunnel.newInstance("queue", "localhost");
-       // tunnel.publish("HelloWorld");
-       // Message = tunnel.receive();
+        tunnel.disconnect();
     }
     public String getMessage() {
         return Message;
