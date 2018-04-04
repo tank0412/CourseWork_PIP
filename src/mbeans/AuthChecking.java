@@ -3,6 +3,9 @@ package mbeans;
 import dao.UserDao;
 import models.Users;
 import org.primefaces.context.RequestContext;
+import rabbitmqjms.Consumer;
+import rabbitmqjms.Producer;
+import rabbitmqjms.Tunnel;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -18,6 +21,7 @@ public class AuthChecking {
     private String pass;
     private Users user;
     private Long Client_ID;
+    public static String nickname;
 
     public void checkIsAdmin() {
         Users user;
@@ -67,6 +71,11 @@ public class AuthChecking {
             this.user = user;
             FacesContext facesContext = FacesContext.getCurrentInstance();
             String outcome = "main.xhtml";
+            EnterMessage.tunnel = Tunnel.newInstance(user.getNickname(), "localhost");
+            EnterMessage.producer =  new Producer(EnterMessage.tunnel ,user.getNickname());
+            EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,user.getNickname());
+            EnterMessage.Sendmsg = "Login success";
+            nickname = user.getNickname();
             if (ud.isAdmin(userId) == true) {
                 outcome = "main_admin.xhtml";
             }
@@ -127,6 +136,7 @@ public class AuthChecking {
         isLogged = false;
         userId = null;
         pass = "";
+        EnterMessage.tunnel.close();
         FacesContext facesContext = FacesContext.getCurrentInstance();
         String outcome = "auth.xhtml";
         try {

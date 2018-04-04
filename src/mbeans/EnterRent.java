@@ -34,22 +34,12 @@ public class EnterRent {
         //String result = "Submitted values: " + Car_ID + ", " + Client_ID + Date_start_rent + ", " + Date_end_rent + ", " + Price_of_rent + ", " ;
        //RequestContext.getCurrentInstance().execute("alert(result);");
             rd.add(rent);
-            //user = rd.getByNickname(login);
-          //  isLogged = true;
-           // userId = user.getId();
-          //  this.user = user;
-          //  FacesContext facesContext = FacesContext.getCurrentInstance();
-          //  String outcome = "main.xhtml";
-          //  try {
-          //      facesContext.getExternalContext().redirect(outcome);
-          //  }
-          //  catch (Exception e){
-          //      e.printStackTrace();
-          //  }
-      //  }
-      //  else
-     //       RequestContext.getCurrentInstance().execute("alert('Registration failed');");
-
+            /*
+        EnterMessage.tunnel.close();
+        EnterMessage.tunnel = Tunnel.newInstance(AuthChecking.nickname, "localhost");
+        EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,AuthChecking.nickname);
+        */
+        //EnterMessage.Sendmsg = "Rent enter success";
     }
     public void prolongate(Long Client_ID) {
         Rent_prolong rent;
@@ -59,6 +49,7 @@ public class EnterRent {
         rd.add(rent);
         RentDao rd2 = new RentDao();
          rd2.prolongateRent2(Rent_id);
+        //EnterMessage.Sendmsg = "Rent prolongate success";
 
     }
     public void getrent() {
@@ -84,11 +75,13 @@ public class EnterRent {
     public void confirmrentByID() {
         RentDao fd = new RentDao();
         fd.confirmRent(Rent_id);
+        //EnterMessage.Sendmsg = "Rent confirm success";
 
     }
     public void confirmRent_prolonByID() {
         Rent_prolongDao fd = new Rent_prolongDao();
         fd.confirmRent(Rent_id);
+        //EnterMessage.Sendmsg = "Rent prolong confirm success";
 
     }
     public Long getCar_ID() {

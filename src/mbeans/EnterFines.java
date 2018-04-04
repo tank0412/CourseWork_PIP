@@ -28,6 +28,7 @@ public class EnterFines {
         //if(fines == null){
         //Fines(Long Client_ID, Date Date_get_fine, String Reason_of_fine, Long Fine_price);
         fd.add(fines);
+        //EnterMessage.Sendmsg = "Fine enter success";
     }
     public void getfine() {
         FinesDao fd = new FinesDao();

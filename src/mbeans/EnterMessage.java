@@ -11,14 +11,20 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean(name = "EnterMessage")
 @SessionScoped
 public class EnterMessage {
-    public String Message = "DefaultText";
-
+    public static String Message = "DefaultText";
+    public static String Sendmsg = "HelloWorld";
+    static Tunnel tunnel;
+    static Producer producer;
+    static Consumer consumer;
     public void sentMessage() {
-        Tunnel tunnel =  Tunnel.newInstance("queue", "localhost");
-        Producer producer = new Producer(tunnel,"queue");
-        Consumer consumer = new Consumer(tunnel,"queue");
-        producer.send("HelloWorld");
+        producer.send(Sendmsg);
+        receive();
+    }
+    public void receive() {
         Message = consumer.receive();
+        //close();
+    }
+    public void close() {
         tunnel.disconnect();
     }
     public String getMessage() {
