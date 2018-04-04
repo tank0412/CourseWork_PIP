@@ -5,13 +5,16 @@
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:f="http://java.sun.com/jsf/core">
     <ui:define name="head">
-        <title>MainPage</title>
+        <title>RabbitMQ JMS</title>
     </ui:define>
     <ui:define name="header">
-        <ui:include src="../templates/header_guest.xhtml"/>
+        <ui:include src="../templates/header_admin.xhtml"/>
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+            #{EnterMessage.sentMessage()}
+            <h:outputText value="Message from JMS RabbitMQ:" /> <br/>
+            <h:outputText value="#{EnterMessage.message}" style="font-weight: bold"/>
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>

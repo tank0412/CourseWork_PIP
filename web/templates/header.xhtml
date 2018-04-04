@@ -3,25 +3,6 @@
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
     <f:event type="preRenderComponent" listener="#{authChecking.checkIsLogged}"/>
 
-<!--
-    <p:tabMenu styleClass="d-flex align-self-end" activeIndex="#{param.i}" >
-        <p:menuitem value="Main" outcome="main" icon="ui-icon-document">
-            <f:param name="i" value="0" />
-        </p:menuitem>
-        <p:menuitem value="Tasks" outcome="tasks" icon="ui-icon-document">
-            <f:param name="i" value="1" />
-        </p:menuitem>
-        <p:menuitem value="Chats" outcome="chats" icon="ui-icon-search">
-            <f:param name="i" value="2" />
-        </p:menuitem>
-        <p:menuitem value="People" outcome="people" icon="ui-icon-search">
-            <f:param name="i" value="3" />
-        </p:menuitem>
-        <p:menuitem value="Transactions" outcome="transactions" icon="ui-icon-wrench">
-            <f:param name="i" value="4" />
-        </p:menuitem>
-    </p:tabMenu>
-//-->
     <nav class="navbar  navbar-toggleable-md navbar-expand-xl navbar-light bg-light d-flex flex-row w-100">
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"/>

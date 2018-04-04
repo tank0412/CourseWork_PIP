@@ -4,25 +4,6 @@
     <f:event type="preRenderComponent" listener="#{authChecking.checkIsLogged}"/>
     <f:event type="preRenderComponent" listener="#{authChecking.checkIsAdmin}"/>
 
-<!--
-    <p:tabMenu styleClass="d-flex align-self-end" activeIndex="#{param.i}" >
-        <p:menuitem value="Main" outcome="main" icon="ui-icon-document">
-            <f:param name="i" value="0" />
-        </p:menuitem>
-        <p:menuitem value="Tasks" outcome="tasks" icon="ui-icon-document">
-            <f:param name="i" value="1" />
-        </p:menuitem>
-        <p:menuitem value="Chats" outcome="chats" icon="ui-icon-search">
-            <f:param name="i" value="2" />
-        </p:menuitem>
-        <p:menuitem value="People" outcome="people" icon="ui-icon-search">
-            <f:param name="i" value="3" />
-        </p:menuitem>
-        <p:menuitem value="Transactions" outcome="transactions" icon="ui-icon-wrench">
-            <f:param name="i" value="4" />
-        </p:menuitem>
-    </p:tabMenu>
-//-->
     <nav class="navbar  navbar-toggleable-md navbar-expand-xl navbar-light bg-light d-flex flex-row w-100">
         <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"/>
@@ -35,7 +16,7 @@
                 <p:link styleClass="nav-item nav-link" href="../pages/rent_check.xhtml">Одобрить аренду</p:link>
                 <p:link styleClass="nav-item nav-link" href="../pages/fine_make.xhtml">Выписать штраф</p:link>
                 <p:link styleClass="nav-item nav-link" href="../pages/make_admin.xhtml">Админка</p:link>
-                <p:link styleClass="nav-item nav-link" href="../pages/rabbitmqjms.xhtml">JMS</p:link>
+                <p:link styleClass="nav-item nav-link" href="../pages/rabbitmqjms_admin.xhtml">JMS</p:link>
                 <h:form>
                     <p:commandLink styleClass="nav-item nav-link" action="#{authChecking.logout}" >Logout</p:commandLink>
                 </h:form>
