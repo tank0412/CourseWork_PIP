@@ -26,6 +26,7 @@ public class EnterRent {
     public ArrayList<Rent_prolong> allRent_prolong;
 
     public void enter(long Client_ID) {
+        EnterMessage.Sendmsg = "Rent enter success";
         Rent rent;
         RentDao rd = new RentDao();
         //rent = rd.getByNickname(login);
@@ -39,9 +40,9 @@ public class EnterRent {
         EnterMessage.tunnel = Tunnel.newInstance(AuthChecking.nickname, "localhost");
         EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,AuthChecking.nickname);
         */
-        //EnterMessage.Sendmsg = "Rent enter success";
     }
     public void prolongate(Long Client_ID) {
+        EnterMessage.Sendmsg = "Rent prolongate success";
         Rent_prolong rent;
         Rent_prolongDao rd = new Rent_prolongDao();
         //public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
@@ -49,7 +50,6 @@ public class EnterRent {
         rd.add(rent);
         RentDao rd2 = new RentDao();
          rd2.prolongateRent2(Rent_id);
-        //EnterMessage.Sendmsg = "Rent prolongate success";
 
     }
     public void getrent() {
@@ -73,15 +73,15 @@ public class EnterRent {
 
     }
     public void confirmrentByID() {
+        EnterMessage.Sendmsg = "Rent confirm success";
         RentDao fd = new RentDao();
         fd.confirmRent(Rent_id);
-        //EnterMessage.Sendmsg = "Rent confirm success";
 
     }
     public void confirmRent_prolonByID() {
+        EnterMessage.Sendmsg = "Rent prolong confirm success";
         Rent_prolongDao fd = new Rent_prolongDao();
         fd.confirmRent(Rent_id);
-        //EnterMessage.Sendmsg = "Rent prolong confirm success";
 
     }
     public Long getCar_ID() {

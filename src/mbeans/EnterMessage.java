@@ -17,11 +17,13 @@ public class EnterMessage {
     static Producer producer;
     static Consumer consumer;
     public void sentMessage() {
+        AuthChecking.initJMS();
         producer.send(Sendmsg);
         receive();
     }
     public void receive() {
         Message = consumer.receive();
+        AuthChecking.destroyJMS();
         //close();
     }
     public void close() {

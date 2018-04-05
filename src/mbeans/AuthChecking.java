@@ -19,7 +19,7 @@ public class AuthChecking {
     private Long userId;
     private String login;
     private String pass;
-    private Users user;
+    private static Users user;
     private Long Client_ID;
     public static String nickname;
 
@@ -61,6 +61,14 @@ public class AuthChecking {
             updateUser();
         }
     }
+    public static void initJMS() {
+        EnterMessage.tunnel = Tunnel.newInstance(user.getNickname(), "localhost");
+        EnterMessage.producer =  new Producer(EnterMessage.tunnel ,user.getNickname());
+        EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,user.getNickname());
+    }
+    public static void destroyJMS() {
+        EnterMessage.tunnel.disconnect();
+    }
     public void login(){
         Users user;
         UserDao ud = new UserDao();
@@ -71,9 +79,7 @@ public class AuthChecking {
             this.user = user;
             FacesContext facesContext = FacesContext.getCurrentInstance();
             String outcome = "main.xhtml";
-            EnterMessage.tunnel = Tunnel.newInstance(user.getNickname(), "localhost");
-            EnterMessage.producer =  new Producer(EnterMessage.tunnel ,user.getNickname());
-            EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,user.getNickname());
+            initJMS();
             EnterMessage.Sendmsg = "Login success";
             nickname = user.getNickname();
             if (ud.isAdmin(userId) == true) {
@@ -136,7 +142,6 @@ public class AuthChecking {
         isLogged = false;
         userId = null;
         pass = "";
-        EnterMessage.tunnel.close();
         FacesContext facesContext = FacesContext.getCurrentInstance();
         String outcome = "auth.xhtml";
         try {
