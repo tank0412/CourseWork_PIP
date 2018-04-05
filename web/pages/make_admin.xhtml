@@ -12,7 +12,37 @@
     </ui:define>
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
+            <h:outputText value="Список пользователей:" />
+            #{userBean.getusers()}
+            <h:dataTable value="#{userBean.allusers}" var="o">
+
+                <h:column>
+                    <f:facet name="header">id</f:facet>
+                    #{o.id}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">nickname</f:facet>
+                    #{o.nickname}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">name</f:facet>
+                    #{o.name}
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">jid</f:facet>
+                    #{o.jid}
+
+                </h:column>
+                <h:column>
+                    <f:facet name="header">isadmin</f:facet>
+                    #{o.isadmin}
+                </h:column>
+            </h:dataTable>
             <h:form>
+
                 <h:outputText value="Make user admin:" />
                 <h:panelGrid columns="2" cellpadding="5">
                     <h:outputText value="User ID:" />

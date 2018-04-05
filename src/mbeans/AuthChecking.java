@@ -119,6 +119,7 @@ public class AuthChecking {
             RequestContext.getCurrentInstance().execute("alert('Registration failed');");
     }
     public void makeadmin() {
+        EnterMessage.Sendmsg = "Make admin success";
         UserDao ud = new UserDao();
         ud.makeAdmin(Client_ID);
 
