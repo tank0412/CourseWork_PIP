@@ -23,6 +23,7 @@ public class AccountBean implements Serializable {
     private String newpass2;
     private String oldpass;
 
+    public static Users myuser;
     @EJB
     XmppManager xm;
 
@@ -97,6 +98,31 @@ public class AccountBean implements Serializable {
         showMsg("Success", "Password changed.");
     }
 
+    public static void sendJabberMessage(String message) {
+        XmppManager xm = new XmppManager("jabber.ru", 5222);
+        Pattern p = Pattern.compile("^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+");
+        Matcher m = p.matcher(myuser.getJid());
+        if(!m.matches()){
+            //showMsg("Testing error", "Something wrong, check JID.");
+            return;
+        }
+        try {
+            xm.init();
+            xm.performLogin("tank0412", "pip0412");
+            xm.sendMessage(message + Long.toString(myuser.getId()), myuser.getJid());
+        }
+        catch (Exception e)
+        {
+           // showMsg("Send to Jabber error", "Something wrong, check JID.");
+
+            e.printStackTrace();
+            return;
+        }
+        finally {
+            xm.destroy();
+        }
+        //showMsg("Testing success.", "Check " + user.getJid());
+    }
     public void testXMPPMessage()  {
         if(!testJid(user.getJid())){
             showMsg("Testing error", "Something wrong, check JID.");

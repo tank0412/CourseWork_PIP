@@ -26,6 +26,7 @@ public class EnterRent {
     public ArrayList<Rent_prolong> allRent_prolong;
 
     public void enter(long Client_ID) {
+        AccountBean.sendJabberMessage("Rent enter success");
         EnterMessage.Sendmsg = "Rent enter success";
         Rent rent;
         RentDao rd = new RentDao();
@@ -35,14 +36,10 @@ public class EnterRent {
         //String result = "Submitted values: " + Car_ID + ", " + Client_ID + Date_start_rent + ", " + Date_end_rent + ", " + Price_of_rent + ", " ;
        //RequestContext.getCurrentInstance().execute("alert(result);");
             rd.add(rent);
-            /*
-        EnterMessage.tunnel.close();
-        EnterMessage.tunnel = Tunnel.newInstance(AuthChecking.nickname, "localhost");
-        EnterMessage.consumer =  new Consumer(EnterMessage.tunnel ,AuthChecking.nickname);
-        */
     }
     public void prolongate(Long Client_ID) {
-        EnterMessage.Sendmsg = "Rent prolongate success";
+        AccountBean.sendJabberMessage("Rent prolong success");
+        EnterMessage.Sendmsg = "Rent prolong success";
         Rent_prolong rent;
         Rent_prolongDao rd = new Rent_prolongDao();
         //public Rent_prolong(Long rent_ID,Long client_ID, Date new_date_end_rent, Long new_price_of_rent) {
@@ -73,12 +70,14 @@ public class EnterRent {
 
     }
     public void confirmrentByID() {
+        AccountBean.sendJabberMessage("Rent confirm success");
         EnterMessage.Sendmsg = "Rent confirm success";
         RentDao fd = new RentDao();
         fd.confirmRent(Rent_id);
 
     }
     public void confirmRent_prolonByID() {
+        AccountBean.sendJabberMessage("Rent prolong confirm success");
         EnterMessage.Sendmsg = "Rent prolong confirm success";
         Rent_prolongDao fd = new Rent_prolongDao();
         fd.confirmRent(Rent_id);

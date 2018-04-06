@@ -77,9 +77,11 @@ public class AuthChecking {
             isLogged = true;
             userId = user.getId();
             this.user = user;
+            AccountBean.myuser = user;
             FacesContext facesContext = FacesContext.getCurrentInstance();
             String outcome = "main.xhtml";
             initJMS();
+            AccountBean.sendJabberMessage("Login success");
             EnterMessage.Sendmsg = "Login success";
             nickname = user.getNickname();
             if (ud.isAdmin(userId) == true) {
@@ -119,6 +121,7 @@ public class AuthChecking {
             RequestContext.getCurrentInstance().execute("alert('Registration failed');");
     }
     public void makeadmin() {
+        AccountBean.sendJabberMessage("Make admin success");
         EnterMessage.Sendmsg = "Make admin success";
         UserDao ud = new UserDao();
         ud.makeAdmin(Client_ID);

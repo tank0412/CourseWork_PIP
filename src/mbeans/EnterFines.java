@@ -29,6 +29,7 @@ public class EnterFines {
         //Fines(Long Client_ID, Date Date_get_fine, String Reason_of_fine, Long Fine_price);
         fd.add(fines);
         EnterMessage.Sendmsg = "Fine enter success";
+        AccountBean.sendJabberMessage("Fine enter success");
     }
     public void getfine() {
         FinesDao fd = new FinesDao();
