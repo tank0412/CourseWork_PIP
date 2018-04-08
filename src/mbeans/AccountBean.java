@@ -113,7 +113,7 @@ public class AccountBean implements Serializable {
         try {
             xm.init();
             xm.performLogin("tank0412", "pip0412");
-            xm.sendMessage(message + Long.toString(myuser.getId()), myuser.getJid());
+            xm.sendMessage(message, myuser.getJid());
         }
         catch (Exception e)
         {

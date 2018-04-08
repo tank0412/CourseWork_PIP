@@ -1,7 +1,9 @@
 package mbeans;
 
 import dao.FinesDao;
+import dao.UserDao;
 import models.Fines;
+import models.Users;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -24,11 +26,13 @@ public class EnterFines {
         Fines fines;
         FinesDao fd = new FinesDao();
         fines = new Fines( Client_ID, Date_get_fine, Reason_of_fine,  Fine_price );
-        //fines = fd.getByNickname(login);
-        //if(fines == null){
-        //Fines(Long Client_ID, Date Date_get_fine, String Reason_of_fine, Long Fine_price);
         fd.add(fines);
         EnterMessage.Sendmsg = "Fine enter success";
+        Users backupusers = AccountBean.myuser;
+        UserDao ud = new UserDao();
+        AccountBean.myuser = ud.getById(Client_ID);
+        AccountBean.sendJabberMessage("Admin make a fine for you!");
+        AccountBean.myuser = backupusers;
         AccountBean.sendJabberMessage("Fine enter success");
     }
     public void getfine() {

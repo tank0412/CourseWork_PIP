@@ -2,8 +2,10 @@ package mbeans;
 
 import dao.RentDao;
 import dao.Rent_prolongDao;
+import dao.UserDao;
 import models.Rent;
 import models.Rent_prolong;
+import models.Users;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -70,17 +72,29 @@ public class EnterRent {
 
     }
     public void confirmrentByID() {
+        Users backupusers = AccountBean.myuser;
+        RentDao rd = new RentDao();
+        Rent rent = rd.getById(Rent_id);
+        UserDao ud = new UserDao();
+        AccountBean.myuser = ud.getById(rent.getClient_ID());
+        AccountBean.sendJabberMessage("Admin confirm your rent");
+        AccountBean.myuser = backupusers;
         AccountBean.sendJabberMessage("Rent confirm success");
         EnterMessage.Sendmsg = "Rent confirm success";
-        RentDao fd = new RentDao();
-        fd.confirmRent(Rent_id);
+        rd.confirmRent(Rent_id);
 
     }
     public void confirmRent_prolonByID() {
+        Users backupusers = AccountBean.myuser;
+        Rent_prolongDao rd = new Rent_prolongDao();
+        Rent_prolong rent = rd.getById(Rent_id);
+        UserDao ud = new UserDao();
+        AccountBean.myuser = ud.getById(rent.getClient_ID());
+        AccountBean.sendJabberMessage("Admin confirm your rent prolong");
+        AccountBean.myuser = backupusers;
         AccountBean.sendJabberMessage("Rent prolong confirm success");
         EnterMessage.Sendmsg = "Rent prolong confirm success";
-        Rent_prolongDao fd = new Rent_prolongDao();
-        fd.confirmRent(Rent_id);
+        rd.confirmRent(Rent_id);
 
     }
     public Long getCar_ID() {

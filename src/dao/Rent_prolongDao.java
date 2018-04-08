@@ -112,7 +112,6 @@ public class Rent_prolongDao extends ICrud<Rent_prolong> {
         return;
     }
 
-
     }
 
 
