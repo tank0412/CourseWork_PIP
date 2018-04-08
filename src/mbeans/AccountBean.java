@@ -101,6 +101,10 @@ public class AccountBean implements Serializable {
     public static void sendJabberMessage(String message) {
         XmppManager xm = new XmppManager("jabber.ru", 5222);
         Pattern p = Pattern.compile("^[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+");
+        if(myuser.getJid() == null)
+        {
+            return;
+        }
         Matcher m = p.matcher(myuser.getJid());
         if(!m.matches()){
             //showMsg("Testing error", "Something wrong, check JID.");

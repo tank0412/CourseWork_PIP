@@ -146,6 +146,7 @@ public class AuthChecking {
         isLogged = false;
         userId = null;
         pass = "";
+        AccountBean.myuser = null;
         FacesContext facesContext = FacesContext.getCurrentInstance();
         String outcome = "auth.xhtml";
         try {
