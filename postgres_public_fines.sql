@@ -1,0 +1,2 @@
+INSERT INTO public.fines (id, сlient_id, date_get_fine, reason_of_fine, fine_price) VALUES (2, 2, '2018-01-01 00:00:00.000000', 'Бухал', 1000);
+INSERT INTO public.fines (id, сlient_id, date_get_fine, reason_of_fine, fine_price) VALUES (3, 2, '2018-04-08 00:00:00.000000', 'Разбил бампер', 32000);

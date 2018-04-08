@@ -1,31 +1,56 @@
-CREATE TABLE "rent" (
-  "id" bigserial,
-  "car_ID" bigserial REFERENCES Cars ("id"),
-  "client_ID" bigserial REFERENCES users ("id"),
-  "date_start_rent"  DATE NOT NULL,
-  "date_end_rent"  DATE NOT NULL,
-  "price_of_rent" BIGINT NOT NULL
-);
-
-CREATE TABLE "fines" (
-  "id" bigserial,
-  "client_ID" bigserial REFERENCES users ("id"),
-  "date_get_fine"  DATE NOT NULL,
-  "reason_of_fine" VARCHAR(40) NOT NULL,
-  "fine_price" MONEY NOT NULL
-);
-
 CREATE TABLE "cars" (
 "id" bigserial
 );
 
-CREATE TABLE "rent_prolong" (
-  "id" bigserial primary key,
-  "rent_ID" bigserial REFERENCES rent ("id"),
-  "client_ID" bigserial REFERENCES users ("id"),
-  "new_date_end_rent"  DATE NOT NULL,
-  "new_price_of_rent" BIGINT NOT NULL,
-  "isconfirmed" BOOLEAN
-);
+create table fines
+(
+	id bigserial not null
+		constraint fines_pkey
+			primary key,
+	"ñlient_id" bigserial not null
+		constraint "fines_Client_ID_fkey"
+			references users,
+	date_get_fine date not null,
+	reason_of_fine varchar(40) not null,
+	fine_price bigint not null
+)
+;
+create table rent
+(
+	id bigserial not null
+		constraint rent_pkey
+			primary key,
+	car_id bigserial not null
+		constraint "rent_Car_ID_fkey"
+			references cars,
+	client_id bigserial not null
+		constraint "rent_Client_ID_fkey"
+			references users,
+	date_start_rent date not null,
+	date_end_rent date not null,
+	price_of_rent bigint not null,
+	isprolongated boolean,
+	isconfirmed boolean
+)
+;
+
+create table rent_prolong
+(
+	id bigserial not null
+		constraint rent_prolong_pkey
+			primary key,
+	rent_id bigserial not null
+		constraint rent_prolong_rent_id_fkey
+			references rent,
+	client_id bigserial not null
+		constraint rent_prolong_client_id_fkey
+			references users,
+	new_date_end_rent date not null,
+	new_price_of_rent bigint not null,
+	isconfirmed boolean
+)
+;
+
+
 
 

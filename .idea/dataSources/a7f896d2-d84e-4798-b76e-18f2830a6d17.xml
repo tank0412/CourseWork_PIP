@@ -45,8 +45,8 @@
     </role>
     <schema id="9" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-04-01.20:55:19.195</IntrospectionTimestamp>
-      <IntrospectionStateNumber>752</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-08.15:24:55.510</IntrospectionTimestamp>
+      <IntrospectionStateNumber>822</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -66,24 +66,24 @@
       <ObjectId>12002</ObjectId>
     </schema>
     <sequence id="15" parent="9" name="rent_prolong_client_id_seq">
-      <ObjectId>17008</ObjectId>
-      <StateNumber>752</StateNumber>
+      <ObjectId>17073</ObjectId>
+      <StateNumber>822</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="16" parent="9" name="rent_prolong_id_seq">
-      <ObjectId>17004</ObjectId>
-      <StateNumber>752</StateNumber>
+      <ObjectId>17069</ObjectId>
+      <StateNumber>822</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="17" parent="9" name="rent_prolong_rent_id_seq">
-      <ObjectId>17006</ObjectId>
-      <StateNumber>752</StateNumber>
+      <ObjectId>17071</ObjectId>
+      <StateNumber>822</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
@@ -97,41 +97,41 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="19" parent="9" name="fines_Client_ID_seq">
-      <ObjectId>16870</ObjectId>
-      <StateNumber>663</StateNumber>
+    <sequence id="19" parent="9" name="fines_id_seq">
+      <ObjectId>17029</ObjectId>
+      <StateNumber>820</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="20" parent="9" name="fines_id_seq">
-      <ObjectId>16868</ObjectId>
-      <StateNumber>663</StateNumber>
+    <sequence id="20" parent="9" name="fines_сlient_id_seq">
+      <ObjectId>17031</ObjectId>
+      <StateNumber>820</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="21" parent="9" name="rent_Car_ID_seq">
-      <ObjectId>16887</ObjectId>
-      <StateNumber>664</StateNumber>
+    <sequence id="21" parent="9" name="rent_car_id_seq">
+      <ObjectId>17047</ObjectId>
+      <StateNumber>821</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="22" parent="9" name="rent_Client_ID_seq">
-      <ObjectId>16889</ObjectId>
-      <StateNumber>664</StateNumber>
+    <sequence id="22" parent="9" name="rent_client_id_seq">
+      <ObjectId>17049</ObjectId>
+      <StateNumber>821</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="23" parent="9" name="rent_id_seq">
-      <ObjectId>16885</ObjectId>
-      <StateNumber>664</StateNumber>
+      <ObjectId>17045</ObjectId>
+      <StateNumber>821</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
@@ -147,23 +147,23 @@
     </sequence>
     <table id="25" parent="9" name="cars">
       <ObjectId>16862</ObjectId>
-      <StateNumber>664</StateNumber>
+      <StateNumber>821</StateNumber>
     </table>
     <table id="26" parent="9" name="fines">
-      <ObjectId>16872</ObjectId>
-      <StateNumber>663</StateNumber>
+      <ObjectId>17033</ObjectId>
+      <StateNumber>820</StateNumber>
     </table>
     <table id="27" parent="9" name="rent">
-      <ObjectId>16891</ObjectId>
-      <StateNumber>752</StateNumber>
+      <ObjectId>17051</ObjectId>
+      <StateNumber>822</StateNumber>
     </table>
     <table id="28" parent="9" name="rent_prolong">
-      <ObjectId>17010</ObjectId>
-      <StateNumber>752</StateNumber>
+      <ObjectId>17075</ObjectId>
+      <StateNumber>822</StateNumber>
     </table>
     <table id="29" parent="9" name="users">
       <ObjectId>16648</ObjectId>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
     </table>
     <column id="30" parent="25" name="id">
       <Position>1</Position>
@@ -189,7 +189,7 @@
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>663</StateNumber>
+      <StateNumber>820</StateNumber>
       <DefaultExpression>nextval(&apos;fines_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>fines_id_seq</SequenceName>
@@ -198,46 +198,45 @@
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>711</StateNumber>
-      <DefaultExpression>nextval(&apos;&quot;fines_Client_ID_seq&quot;&apos;::regclass)</DefaultExpression>
+      <StateNumber>820</StateNumber>
+      <DefaultExpression>nextval(&apos;&quot;fines_сlient_id_seq&quot;&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>fines_Client_ID_seq</SequenceName>
+      <SequenceName>fines_сlient_id_seq</SequenceName>
     </column>
     <column id="35" parent="26" name="date_get_fine">
       <Position>3</Position>
-      <DataType>timestamp with time zone|0</DataType>
+      <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>712</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
+      <StateNumber>820</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
     <column id="36" parent="26" name="reason_of_fine">
       <Position>4</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>713</StateNumber>
+      <StateNumber>820</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="37" parent="26" name="fine_price">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>714</StateNumber>
+      <StateNumber>820</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="38" parent="26" name="fines_pkey">
-      <ObjectId>16878</ObjectId>
+      <ObjectId>17038</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="39" parent="26" name="fines_pkey">
-      <ObjectId>16879</ObjectId>
+      <ObjectId>17039</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>fines_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="40" parent="26" name="fines_Client_ID_fkey">
-      <ObjectId>16880</ObjectId>
+      <ObjectId>17040</ObjectId>
       <ColNames>сlient_id</ColNames>
       <RefTableId>16648</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -249,7 +248,7 @@
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>664</StateNumber>
+      <StateNumber>821</StateNumber>
       <DefaultExpression>nextval(&apos;rent_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_id_seq</SequenceName>
@@ -258,68 +257,66 @@
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>682</StateNumber>
-      <DefaultExpression>nextval(&apos;&quot;rent_Car_ID_seq&quot;&apos;::regclass)</DefaultExpression>
+      <StateNumber>821</StateNumber>
+      <DefaultExpression>nextval(&apos;rent_car_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>rent_Car_ID_seq</SequenceName>
+      <SequenceName>rent_car_id_seq</SequenceName>
     </column>
     <column id="43" parent="27" name="client_id">
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>683</StateNumber>
-      <DefaultExpression>nextval(&apos;&quot;rent_Client_ID_seq&quot;&apos;::regclass)</DefaultExpression>
+      <StateNumber>821</StateNumber>
+      <DefaultExpression>nextval(&apos;rent_client_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
-      <SequenceName>rent_Client_ID_seq</SequenceName>
+      <SequenceName>rent_client_id_seq</SequenceName>
     </column>
     <column id="44" parent="27" name="date_start_rent">
       <Position>4</Position>
-      <DataType>timestamp with time zone|0</DataType>
+      <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>684</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
+      <StateNumber>821</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
     <column id="45" parent="27" name="date_end_rent">
       <Position>5</Position>
-      <DataType>timestamp with time zone|0</DataType>
+      <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>685</StateNumber>
-      <DefaultExpression>now()</DefaultExpression>
-      <TypeId>1184</TypeId>
+      <StateNumber>821</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
     <column id="46" parent="27" name="price_of_rent">
       <Position>6</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>686</StateNumber>
+      <StateNumber>821</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="47" parent="27" name="isprolongated">
-      <Position>10</Position>
+      <Position>7</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>725</StateNumber>
+      <StateNumber>821</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <column id="48" parent="27" name="isconfirmed">
-      <Position>11</Position>
+      <Position>8</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>726</StateNumber>
+      <StateNumber>821</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <index id="49" parent="27" name="rent_pkey">
-      <ObjectId>16899</ObjectId>
+      <ObjectId>17057</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="50" parent="27" name="rent_pkey">
-      <ObjectId>16900</ObjectId>
+      <ObjectId>17058</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>rent_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="51" parent="27" name="rent_Car_ID_fkey">
-      <ObjectId>16901</ObjectId>
+      <ObjectId>17059</ObjectId>
       <ColNames>car_id</ColNames>
       <RefTableId>16862</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -328,7 +325,7 @@
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="52" parent="27" name="rent_Client_ID_fkey">
-      <ObjectId>16906</ObjectId>
+      <ObjectId>17064</ObjectId>
       <ColNames>client_id</ColNames>
       <RefTableId>16648</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -340,7 +337,7 @@
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <DefaultExpression>nextval(&apos;rent_prolong_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_prolong_id_seq</SequenceName>
@@ -349,7 +346,7 @@
       <Position>2</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <DefaultExpression>nextval(&apos;rent_prolong_rent_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_prolong_rent_id_seq</SequenceName>
@@ -358,7 +355,7 @@
       <Position>3</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <DefaultExpression>nextval(&apos;rent_prolong_client_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>rent_prolong_client_id_seq</SequenceName>
@@ -367,44 +364,44 @@
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="57" parent="28" name="new_price_of_rent">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="58" parent="28" name="isconfirmed">
       <Position>6</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>752</StateNumber>
+      <StateNumber>822</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <index id="59" parent="28" name="rent_prolong_pkey">
-      <ObjectId>17016</ObjectId>
+      <ObjectId>17081</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="60" parent="28" name="rent_prolong_pkey">
-      <ObjectId>17017</ObjectId>
+      <ObjectId>17082</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>rent_prolong_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="61" parent="28" name="rent_prolong_rent_id_fkey">
-      <ObjectId>17018</ObjectId>
+      <ObjectId>17083</ObjectId>
       <ColNames>rent_id</ColNames>
-      <RefTableId>16891</RefTableId>
+      <RefTableId>17051</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>rent</RefTableName>
       <RefKeyName>rent_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="62" parent="28" name="rent_prolong_client_id_fkey">
-      <ObjectId>17023</ObjectId>
+      <ObjectId>17088</ObjectId>
       <ColNames>client_id</ColNames>
       <RefTableId>16648</RefTableId>
       <RefColPositions>1</RefColPositions>
