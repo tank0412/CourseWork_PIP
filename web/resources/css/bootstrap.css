@@ -30,7 +30,7 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 1209px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -658,7 +658,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .container {
     max-width: 1140px;
   }
@@ -1393,7 +1393,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1820,7 +1820,7 @@ pre code {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1209px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -3838,7 +3838,7 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1209px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
@@ -3846,7 +3846,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .navbar-expand-xl {
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -5968,7 +5968,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .d-xl-none {
     display: none !important;
   }
@@ -6581,7 +6581,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
         flex-direction: row !important;
@@ -6748,7 +6748,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .float-xl-left {
     float: left !important;
   }
@@ -7932,7 +7932,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -8244,7 +8244,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .text-xl-left {
     text-align: left !important;
   }

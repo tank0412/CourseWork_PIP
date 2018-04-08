@@ -14,7 +14,7 @@
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
             <h:outputText value="Список пользователей:" />
             #{userBean.getusers()}
-            <p:dataTable value="#{userBean.allusers}" var="o" reflow="true">
+            <p:dataTable value="#{userBean.allusers}" var="o" reflow="true" id="users">
                 <p:column headerText="id">
                     <h:outputText value="#{o.id}" />
                 </p:column>
@@ -42,7 +42,7 @@
                     <h:outputText value="User ID:" />
                     <p:inputText  value="#{authChecking.client_ID}" converterId="javax.faces.Long" style="font-weight: bold"/>
                 </h:panelGrid>
-                <p:commandButton value="Make admin" actionListener="#{authChecking.makeadmin}"/>
+                <p:commandButton value="Make admin" actionListener="#{authChecking.makeadmin}" oncomplete="users"/>
             </h:form>
         </div>
         <div class="rightBlock align-self-start m-2">

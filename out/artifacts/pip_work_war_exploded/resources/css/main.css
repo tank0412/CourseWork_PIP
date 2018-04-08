@@ -20,10 +20,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 75%;
 }
-.chat {
-    border: 2px solid rgb(93, 0, 70);
-    flex-grow: 5;
-}
 
 .chatinput {
     width: 700px;

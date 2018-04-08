@@ -45,7 +45,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .container {
     max-width: 1140px;
   }
@@ -780,7 +780,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1446,7 +1446,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1209px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
         flex-direction: row !important;
