@@ -13,81 +13,71 @@
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
                         <b>Аренда</b>
                         #{EnterRent.getrentbyID(accountBean.user.id)}
-                        <h:dataTable value="#{EnterRent.allrent}" var="o">
+                        <p:dataTable value="#{EnterRent.allrent}" var="o" tableStyleClass="ui-table-columntoggle">
+                            <p:column headerText="id">
+                                <h:outputText value="#{o.id}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">id</f:facet>
-                                #{o.id}
-                            </h:column>
+                            <p:column headerText="id">
+                                <h:outputText value="#{o.id}" />
+                            </p:column>
 
-                          <!--<h:column>
-                                <f:facet name="header">car_ID</f:facet>
-                                #{o.car_ID}
-                            </h:column> -->
+                            <!-- <p:column headerText="car_ID">
+                                <h:outputText value="#{o.car_ID}" />
+                            </p:column>-->
 
-                            <h:column>
-                                <f:facet name="header">Client_ID</f:facet>
-                                #{o.client_ID}
-                            </h:column>
+                            <p:column headerText="Client_ID">
+                                <h:outputText value="#{o.client_ID}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">Date_start_rent</f:facet>
-                                #{o.date_start_rent}
-                            </h:column>
+                            <p:column headerText="Date_start_rent">
+                                <h:outputText value="#{o.date_start_rent}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">Date_end_rent</f:facet>
-                                #{o.date_end_rent}
+                            <p:column headerText="Date_end_rent">
+                                <h:outputText value="#{o.date_end_rent}" />
+                            </p:column>
 
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">Price_of_rent</f:facet>
-                                #{o.price_of_rent}
-                            </h:column>
+                            <p:column headerText="Price_of_rent">
+                                <h:outputText value="#{o.price_of_rent}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">isprolongated</f:facet>
-                                #{o.isprolongated}
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">isconfirmed</f:facet>
-                                #{o.isconfirmed}
-                            </h:column>
-                        </h:dataTable>
+                            <p:column headerText="isprolongated">
+                                <h:outputText value="#{o.isprolongated}" />
+                            </p:column>
+
+                            <p:column headerText="isconfirmed">
+                                <h:outputText value="#{o.isconfirmed}" />
+                            </p:column>
+                        </p:dataTable>
                         <b>Продление аренды</b>
                         #{EnterRent.getRent_prolongbyID(accountBean.user.id)}
-                        <h:dataTable value="#{EnterRent.allRent_prolong}" var="o">
+                        <p:dataTable value="#{EnterRent.allRent_prolong}" var="o" tableStyleClass="ui-table-columntoggle">
 
-                            <h:column>
-                                <f:facet name="header">id</f:facet>
-                                #{o.id}
-                            </h:column>
+                            <p:column headerText="id">
+                                <h:outputText value="#{o.id}" />
+                            </p:column>
 
-                            <h:column>
-                                  <f:facet name="header">rent_id</f:facet>
-                                  #{o.rent_id}
-                              </h:column>
+                            <p:column headerText="rent_id">
+                                <h:outputText value="#{o.rent_id}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">Client_ID</f:facet>
-                                #{o.client_ID}
-                            </h:column>
+                            <p:column headerText="Client_ID">
+                                <h:outputText value="#{o.client_ID}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">new_date_end_rent</f:facet>
-                                #{o.new_date_end_rent}
-                            </h:column>
+                            <p:column headerText="new_date_end_rent">
+                                <h:outputText value="#{o.new_date_end_rent}" />
+                            </p:column>
 
-                            <h:column>
-                                <f:facet name="header">new_price_of_rent</f:facet>
-                                #{o.new_price_of_rent}
+                            <p:column headerText="new_price_of_rent">
+                                <h:outputText value="#{o.new_price_of_rent}" />
+                            </p:column>
 
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">isconfirmed</f:facet>
-                                #{o.isconfirmed}
-                            </h:column>
-                        </h:dataTable>
+                            <p:column headerText="isconfirmed">
+                                <h:outputText value="#{o.isconfirmed}" />
+                            </p:column>
+                        </p:dataTable>
                     </div>
                     <div class="rightBlock align-self-start m-2">
                     </div>

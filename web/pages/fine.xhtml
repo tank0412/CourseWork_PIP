@@ -13,34 +13,28 @@
     <ui:define name="content">
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
             #{EnterFines.getfinebyID(accountBean.user.id)}
-            <h:dataTable value="#{EnterFines.allfines}" var="o">
+            <p:dataTable value="#{EnterFines.allfines}" var="o" reflow="true">
+                <p:column headerText="id">
+                    <h:outputText value="#{o.id}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">id</f:facet>
-                    #{o.id}
-                </h:column>
+                <p:column headerText="Client_ID">
+                    <h:outputText value="#{o.client_ID}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">Client_ID</f:facet>
-                    #{o.client_ID}
-                </h:column>
+                <p:column headerText="Date_get_fine">
+                    <h:outputText value="#{o.date_get_fine}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">Date_get_fine</f:facet>
-                    #{o.date_get_fine}
-                </h:column>
+                <p:column headerText="Reason_of_fine">
+                    <h:outputText value="#{o.reason_of_fine}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">Reason_of_fine</f:facet>
-                    #{o.reason_of_fine}
+                <p:column headerText="Fine_price">
+                    <h:outputText value="#{o.fine_price}" />
+                </p:column>
 
-                </h:column>
-                <h:column>
-                    <f:facet name="header">Fine_price</f:facet>
-                    #{o.fine_price}
-                </h:column>
-
-            </h:dataTable>
+            </p:dataTable>
         </div>
         <div class="rightBlock align-self-start m-2">
         </div>

@@ -14,33 +14,27 @@
         <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
             <h:outputText value="Список пользователей:" />
             #{userBean.getusers()}
-            <h:dataTable value="#{userBean.allusers}" var="o">
+            <p:dataTable value="#{userBean.allusers}" var="o" reflow="true">
+                <p:column headerText="id">
+                    <h:outputText value="#{o.id}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">id</f:facet>
-                    #{o.id}
-                </h:column>
+                <p:column headerText="nickname">
+                    <h:outputText value="#{o.nickname}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">nickname</f:facet>
-                    #{o.nickname}
-                </h:column>
+                <p:column headerText="name">
+                    <h:outputText value="#{o.name}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">name</f:facet>
-                    #{o.name}
-                </h:column>
+                <p:column headerText="jid">
+                    <h:outputText value="#{o.jid}" />
+                </p:column>
 
-                <h:column>
-                    <f:facet name="header">jid</f:facet>
-                    #{o.jid}
-
-                </h:column>
-                <h:column>
-                    <f:facet name="header">isadmin</f:facet>
-                    #{o.isadmin}
-                </h:column>
-            </h:dataTable>
+                <p:column headerText="isadmin">
+                    <h:outputText value="#{o.isadmin}" />
+                </p:column>
+            </p:dataTable>
             <h:form>
 
                 <h:outputText value="Make user admin:" />
