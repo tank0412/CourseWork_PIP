@@ -77,11 +77,24 @@ public class EnterRent {
         Rent rent = rd.getById(Rent_id);
         UserDao ud = new UserDao();
         AccountBean.myuser = ud.getById(rent.getClient_ID());
-        AccountBean.sendJabberMessage("Admin confirm your rent");
+        AccountBean.sendJabberMessage("Admin confirm your rent with id" + Rent_id);
         AccountBean.myuser = backupusers;
         AccountBean.sendJabberMessage("Rent confirm success");
         EnterMessage.Sendmsg = "Rent confirm success";
         rd.confirmRent(Rent_id);
+
+    }
+    public void declinerentByID() {
+        Users backupusers = AccountBean.myuser;
+        RentDao rd = new RentDao();
+        Rent rent = rd.getById(Rent_id);
+        UserDao ud = new UserDao();
+        AccountBean.myuser = ud.getById(rent.getClient_ID());
+        AccountBean.sendJabberMessage("Admin declined your rent with id" + Rent_id);
+        AccountBean.myuser = backupusers;
+        AccountBean.sendJabberMessage("Rent decline success");
+        EnterMessage.Sendmsg = "Rent decline success";
+        rd.declineRent(Rent_id);
 
     }
     public void confirmRent_prolonByID() {
@@ -90,11 +103,24 @@ public class EnterRent {
         Rent_prolong rent = rd.getById(Rent_id);
         UserDao ud = new UserDao();
         AccountBean.myuser = ud.getById(rent.getClient_ID());
-        AccountBean.sendJabberMessage("Admin confirm your rent prolong");
+        AccountBean.sendJabberMessage("Admin confirm your rent prolong with id" + Rent_id);
         AccountBean.myuser = backupusers;
         AccountBean.sendJabberMessage("Rent prolong confirm success");
         EnterMessage.Sendmsg = "Rent prolong confirm success";
         rd.confirmRent(Rent_id);
+
+    }
+    public void declineRent_prolonByID() {
+        Users backupusers = AccountBean.myuser;
+        Rent_prolongDao rd = new Rent_prolongDao();
+        Rent_prolong rent = rd.getById(Rent_id);
+        UserDao ud = new UserDao();
+        AccountBean.myuser = ud.getById(rent.getClient_ID());
+        AccountBean.sendJabberMessage("Admin declined your rent prolong with id" + Rent_id );
+        AccountBean.myuser = backupusers;
+        AccountBean.sendJabberMessage("Rent prolong decline success");
+        EnterMessage.Sendmsg = "Rent prolong decline success";
+        rd.declineRent(Rent_id);
 
     }
     public Long getCar_ID() {

@@ -13,7 +13,7 @@
                     <div class="centerBlock align-self-center w-75 m-2 align-items-center mainp">
                         <b>Аренда</b>
                         #{EnterRent.getrent()}
-                        <p:dataTable value="#{EnterRent.allrent}" var="o" reflow="true" id="rent">
+                        <p:dataTable value="#{EnterRent.allrent}" var="o" reflow="true">
                             <p:column headerText="id">
                                 <h:outputText value="#{o.id}" />
                             </p:column>
@@ -55,11 +55,11 @@
                                 <h:outputText value="Enter rent ID:" />
                                 <p:inputText  value="#{EnterRent.rent_id}" converterId="javax.faces.Long" style="font-weight: bold"/>
                             </h:panelGrid>
-                            <p:commandButton value="Confirm rent" actionListener="#{EnterRent.confirmrentByID}" oncomplete="rent"/>
+                            <p:commandButton value="Confirm rent" actionListener="#{EnterRent.confirmrentByID}"/><p:commandButton value="Decline rent" actionListener="#{EnterRent.declinerentByID}"/>
                         </h:form>
                         <b>Продление аренды</b>
                         #{EnterRent.getRent_prolong()}
-                        <p:dataTable value="#{EnterRent.allRent_prolong}" var="o" reflow="true" id="rent_prolong">
+                        <p:dataTable value="#{EnterRent.allRent_prolong}" var="o" reflow="true">
 
                             <p:column headerText="id">
                                 <h:outputText value="#{o.id}" />
@@ -90,7 +90,7 @@
                                 <h:outputText value="Enter rent ID:" />
                                 <p:inputText  value="#{EnterRent.rent_id}" converterId="javax.faces.Long" style="font-weight: bold"/>
                             </h:panelGrid>
-                            <p:commandButton value="Confirm rent prolong" actionListener="#{EnterRent.confirmRent_prolonByID}" oncomplete="rent_prolong"/>
+                            <p:commandButton value="Confirm rent prolong" actionListener="#{EnterRent.confirmRent_prolonByID}"/><p:commandButton value="Decline rent prolong" actionListener="#{EnterRent.declineRent_prolonByID}"/>
                         </h:form>
                     </div>
                     <div class="rightBlock align-self-start m-2">

@@ -111,6 +111,23 @@ public class Rent_prolongDao extends ICrud<Rent_prolong> {
             RequestContext.getCurrentInstance().execute("alert('Make confirmRent successful');");
         return;
     }
+    public void declineRent(Long rentprolongid) {
+        List rents;
+        Rent_prolong rent = null;
+        if (em == null || !em.isOpen())
+            em = JPAUtil.getEntityManager();
+        Query query = em.createNativeQuery("update rent_prolong set isconfirmed = FALSE where id = :rentprolongid" ).setParameter("rentprolongid", rentprolongid);
+
+        List<Rent_prolong> result = (List<Rent_prolong>)query.getResultList();
+        //Query query = em.createQuery("from Users where id = 3L" );
+        if (result.size() == 0) { // Не работает TODO: Пофиксить вывод успешности/неуспешности запроса
+            RequestContext.getCurrentInstance().execute("alert('Make declineRent unsuccessful');");
+            return;
+        }
+        else
+            RequestContext.getCurrentInstance().execute("alert('Make declineRent successful');");
+        return;
+    }
 
     }
 
