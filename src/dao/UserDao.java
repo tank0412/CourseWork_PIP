@@ -55,7 +55,7 @@ public class UserDao extends ICrud<Users> {
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-            Query query = em.createQuery("from Users");
+            Query query = em.createQuery("from Users  ORDER BY id");
             users = (ArrayList<Users>) query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();

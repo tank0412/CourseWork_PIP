@@ -56,7 +56,7 @@ public class RentDao extends ICrud<Rent> {
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-            Query query = em.createQuery("from Rent");
+            Query query = em.createQuery("from Rent ORDER BY id");
             rent = (ArrayList<Rent>) query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();
@@ -79,7 +79,7 @@ public class RentDao extends ICrud<Rent> {
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-           Query query = em.createQuery("from Rent where client_ID = :param").setParameter("param", Client_ID);
+           Query query = em.createQuery("from Rent where client_ID = :param ORDER BY id").setParameter("param", Client_ID);
          //  Query query = em.createQuery("from Users where name = :param").setParameter("param", Client_ID);
             if (query == null)
                 return null;

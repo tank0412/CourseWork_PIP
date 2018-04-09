@@ -53,7 +53,7 @@ public class FinesDao extends ICrud<Fines> {
         try {
             if (em == null || !em.isOpen())
                 em = JPAUtil.getEntityManager();
-            Query query = em.createQuery("from Fines ");
+            Query query = em.createQuery("from Fines ORDER BY id ");
             fine = (ArrayList<Fines>) query.getResultList();
         } catch (Exception e) {
             e.printStackTrace();
