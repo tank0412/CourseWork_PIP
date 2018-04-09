@@ -8,10 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763fc5ad-f37e-4728-9b8d-903329bb870a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dao/FinesDao.java" afterPath="$PROJECT_DIR$/src/dao/FinesDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/RentDao.java" afterPath="$PROJECT_DIR$/src/dao/RentDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" afterPath="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
+      <change beforePath="$PROJECT_DIR$/web/pages/rent_status.xhtml" afterPath="$PROJECT_DIR$/web/pages/rent_status.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,16 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_admin.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/main_admin.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rabbitmqjms_admin.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/rabbitmqjms_admin.xhtml">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,8 +92,8 @@
       <file leaf-file-name="rent_check.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/rent_check.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+            <state relative-caret-position="377">
+              <caret line="61" column="95" lean-forward="false" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -135,17 +122,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RentDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RentDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918">
-              <caret line="81" column="87" lean-forward="false" selection-start-line="81" selection-start-column="87" selection-end-line="81" selection-end-column="87" />
+            <state relative-caret-position="408">
+              <caret line="159" column="68" lean-forward="false" selection-start-line="159" selection-start-column="68" selection-end-line="159" selection-end-column="68" />
               <folding>
                 <marker date="1523274041072" expanded="true" signature="2866:2952" ph="update rent... " />
                 <marker date="1523274041072" expanded="true" signature="3826:3881" ph="update rent... " />
                 <marker date="1523274041072" expanded="true" signature="4642:4695" ph="update rent... " />
                 <marker date="1523274041072" expanded="true" signature="5449:5503" ph="update rent... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rent_status.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/pages/rent_status.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -272,7 +269,6 @@
         <option value="$PROJECT_DIR$/src/mbeans/AuthChecking.java" />
         <option value="$PROJECT_DIR$/src/mbeans/EnterFines.java" />
         <option value="$PROJECT_DIR$/src/mbeans/AccountBean.java" />
-        <option value="$PROJECT_DIR$/web/pages/rent_status.xhtml" />
         <option value="$PROJECT_DIR$/web/pages/fine.xhtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7f896d2-d84e-4798-b76e-18f2830a6d17/console_2.sql" />
@@ -289,6 +285,7 @@
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/dao/Rent_prolongDao.java" />
         <option value="$PROJECT_DIR$/src/dao/RentDao.java" />
+        <option value="$PROJECT_DIR$/web/pages/rent_status.xhtml" />
       </list>
     </option>
   </component>
@@ -311,7 +308,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2" />
     <option name="y" value="231" />
     <option name="width" value="1924" />
@@ -742,12 +739,12 @@
       <workItem from="1523160823727" duration="4975000" />
       <workItem from="1523181861618" duration="8949000" />
       <workItem from="1523256910979" duration="1681000" />
-      <workItem from="1523270883589" duration="3240000" />
+      <workItem from="1523270883589" duration="3519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332542000" />
+    <option name="totallyTimeSpent" value="332821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,7 +756,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -994,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/rent_status.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="38" lean-forward="true" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/rent_prolongate.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1146,14 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/rent_check.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mbeans/EnterRent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -1208,14 +1190,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/RentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="81" column="87" lean-forward="false" selection-start-line="81" selection-start-column="87" selection-end-line="81" selection-end-column="87" />
+        <state relative-caret-position="408">
+          <caret line="159" column="68" lean-forward="false" selection-start-line="159" selection-start-column="68" selection-end-line="159" selection-end-column="68" />
           <folding>
             <marker date="1523274041072" expanded="true" signature="2866:2952" ph="update rent... " />
             <marker date="1523274041072" expanded="true" signature="3826:3881" ph="update rent... " />
             <marker date="1523274041072" expanded="true" signature="4642:4695" ph="update rent... " />
             <marker date="1523274041072" expanded="true" signature="5449:5503" ph="update rent... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/rent_check.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="61" column="95" lean-forward="false" selection-start-line="61" selection-start-column="82" selection-end-line="61" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/rent_status.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="95" lean-forward="false" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
